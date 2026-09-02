@@ -3,127 +3,1956 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mohammed Aftab Ahamed — AI/ML Engineer portfolio." />
+
+  <meta
+    name="description"
+    content="Mohammed Aftab Ahamed — AI/ML Engineer building agentic AI, RAG systems, automation and production-ready AI applications."
+  />
+
+  <meta name="theme-color" content="#08090b" />
+
+  <meta
+    property="og:title"
+    content="Mohammed Aftab Ahamed | AI/ML Engineer"
+  />
+
+  <meta
+    property="og:description"
+    content="AI/ML Engineer focused on Agentic AI, Hybrid RAG, LLM applications and scalable systems."
+  />
+
   <title>Mohammed Aftab Ahamed | AI/ML Engineer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
+  <!-- BACKGROUND -->
   <div class="site-bg" aria-hidden="true">
     <div class="bg-photo"></div>
-    <div class="bg-overlay"></div>
+    <div class="bg-vignette"></div>
+    <div class="bg-grid"></div>
     <div class="grain"></div>
   </div>
 
-  <header class="nav">
-    <a class="brand" href="#home">MA<span>.</span></a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+  <div class="mouse-glow" aria-hidden="true"></div>
+
+  <div class="progress" aria-hidden="true">
+    <span></span>
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <!-- NAVIGATION -->
+<header class="nav">
+
+  <a
+    class="brand"
+    href="#home"
+    aria-label="Go to home"
+  >
+    <span class="brand-mark">MA</span>
+    <span class="brand-name">Mohammed Aftab Ahamed</span>
+  </a>
+
+  <nav
+    class="nav-links"
+    aria-label="Primary navigation"
+  >
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#more">Beyond</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a
+    class="nav-cta"
+    href="#contact"
+  >
+    Let's Connect
+    <span>↗</span>
+  </a>
+
+
+  <!-- MOBILE MENU -->
+
+  <input
+    type="checkbox"
+    id="mobile-nav-toggle"
+    class="mobile-nav-toggle"
+  />
+
+  <label
+    for="mobile-nav-toggle"
+    class="mobile-menu-button"
+    aria-label="Open navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+
+  <div class="mobile-nav-panel">
+
+    <div class="mobile-nav-header">
+      <span>NAVIGATION</span>
+      <span>00 — 06</span>
+    </div>
+
+    <nav aria-label="Mobile navigation">
+
+      <a
+        href="#home"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>00</span>
+        <strong>Home</strong>
+        <i>↗</i>
+      </a>
+
+      <a
+        href="#about"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>01</span>
+        <strong>About</strong>
+        <i>↗</i>
+      </a>
+
+      <a
+        href="#skills"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>02</span>
+        <strong>Skills</strong>
+        <i>↗</i>
+      </a>
+
+      <a
+        href="#projects"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>03</span>
+        <strong>Projects</strong>
+        <i>↗</i>
+      </a>
+
+      <a
+        href="#experience"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>04</span>
+        <strong>Experience</strong>
+        <i>↗</i>
+      </a>
+
+      <a
+        href="#more"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>05</span>
+        <strong>Beyond</strong>
+        <i>↗</i>
+      </a>
+
+      <a
+        href="#contact"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>06</span>
+        <strong>Contact</strong>
+        <i>↗</i>
+      </a>
+
     </nav>
-    <a class="nav-cta" href="#contact">Let's connect <span>↗</span></a>
-  </header>
+
+    <a
+      href="#contact"
+      class="mobile-connect"
+      onclick="document.getElementById('mobile-nav-toggle').checked=false"
+    >
+      <span>LET'S CONNECT</span>
+      <strong>↗</strong>
+    </a>
+
+    <div class="mobile-nav-footer">
+      <span>MOHAMMED AFTAB AHAMED</span>
+      <span>AI / ML ENGINEER</span>
+    </div>
+
+  </div>
+
+</header>
+
+
+  <!-- SECTION RAIL -->
+  <aside
+    class="section-rail"
+    aria-label="Section progress"
+  >
+
+    <a
+      href="#home"
+      data-section="home"
+      class="active"
+    >
+      <span>00</span>
+    </a>
+
+    <a
+      href="#about"
+      data-section="about"
+    >
+      <span>01</span>
+    </a>
+
+    <a
+      href="#experience"
+      data-section="experience"
+    >
+      <span>02</span>
+    </a>
+
+    <a
+      href="#projects"
+      data-section="projects"
+    >
+      <span>03</span>
+    </a>
+
+    <a
+      href="#skills"
+      data-section="skills"
+    >
+      <span>04</span>
+    </a>
+
+    <a
+      href="#more"
+      data-section="more"
+    >
+      <span>05</span>
+    </a>
+
+    <a
+      href="#contact"
+      data-section="contact"
+    >
+      <span>06</span>
+    </a>
+
+  </aside>
+
 
   <main>
-    <section id="home" class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> AI / ML ENGINEER · BENGALURU</p>
-        <h1>Building intelligent<br><span>systems that matter.</span></h1>
-        <p class="hero-text">I’m Mohammed Aftab Ahamed — an AI/ML Engineer focused on Agentic AI, Hybrid RAG, LLM applications, and scalable end-to-end systems.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
-          <a class="button button-ghost" href="mailto:mohammedaftabahamed2@gmail.com">Get in touch <span>↗</span></a>
+
+
+    <!-- =====================================================
+     HERO
+====================================================== -->
+
+<section
+  id="home"
+  class="hero section observe-section"
+>
+
+  <div class="hero-copy reveal visible">
+
+    <!-- STATUS -->
+
+    <div class="hero-status-row">
+
+      <p class="eyebrow">
+        <span class="status-dot"></span>
+        AVAILABLE FOR AI / ML ROLES
+      </p>
+
+      <span class="location">
+        BENGALURU · INDIA
+      </span>
+
+    </div>
+
+
+    <!-- INTRO -->
+
+    <p class="hero-kicker">
+      AI / ML ENGINEER · FULL STACK DEVELOPER
+    </p>
+
+
+    <!-- HEADLINE -->
+
+    <h1>
+      Engineering
+      <br>
+      <span>AI that ships.</span>
+    </h1>
+
+
+    <!-- DESCRIPTION -->
+
+    <p class="hero-text">
+      I build intelligent, scalable and production-ready applications
+      across Agentic AI, Hybrid RAG, LLMs, automation and full-stack
+      engineering.
+    </p>
+
+
+    <!-- ACTIONS -->
+
+    <div class="hero-actions">
+
+      <a
+        class="button button-primary"
+        href="#projects"
+      >
+        View my work
+        <span>↗</span>
+      </a>
+
+      <a
+        class="button button-ghost"
+        href="./assets/Mohammed-Aftab-Resume.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Download résumé
+        <span>↓</span>
+      </a>
+
+    </div>
+
+
+    <!-- SOCIALS -->
+
+    <div class="hero-social-row">
+
+  <span>CONNECT WITH ME</span>
+
+  <!-- GitHub -->
+  <a
+    href="https://github.com/MoAftab-01"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub profile"
+  >
+    <img
+      class="social-logo"
+      src="https://cdn.simpleicons.org/github"
+      alt="GitHub"
+    />
+  </a>
+
+  <!-- LinkedIn -->
+  <a
+  class="hero-social-link linkedin-link"
+  href="https://www.linkedin.com/in/mo-aftab/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LinkedIn profile"
+>
+  <svg
+    class="linkedin-svg"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/>
+  </svg>
+</a>
+
+  <!-- Email -->
+  <a
+    href="mailto:mohammedaftabahamed2@gmail.com"
+    aria-label="Email Mohammed Aftab Ahamed"
+  >
+    <img
+      class="social-logo"
+      src="https://cdn.simpleicons.org/gmail"
+      alt="Email"
+    />
+  </a>
+
+</div>
+
+
+  <!-- HERO SIDE -->
+
+  <div class="hero-side-card glass reveal visible">
+
+    <span class="card-label">
+      CURRENT FOCUS
+    </span>
+
+    <div class="focus-title">
+      <span class="focus-pulse"></span>
+      Intelligent systems
+    </div>
+
+    <p>
+      Agentic AI · Hybrid RAG · LLM applications
+      · FastAPI · LangGraph
+    </p>
+
+    <div class="focus-stack">
+
+      <span>AGENTS</span>
+      <span>RAG</span>
+      <span>APIs</span>
+      <span>CLOUD</span>
+
+    </div>
+
+    <div class="signal-line">
+
+      <span></span>
+
+      <small>
+        Building systems, not demos.
+      </small>
+
+    </div>
+
+  </div>
+
+
+  <!-- SCROLL -->
+
+  <a
+    class="scroll-cue"
+    href="#about"
+  >
+    <span></span>
+    Scroll to explore
+  </a>
+
+
+  <!-- HERO STATS -->
+
+  <div class="hero-stats glass reveal visible">
+
+    <div class="hero-stat">
+
+      <div class="stat-icon">
+        ✦
+      </div>
+
+      <div>
+        <strong>9.43</strong>
+        <span>B.E. CGPA</span>
+      </div>
+
+    </div>
+
+
+    <div class="hero-stat">
+
+      <div class="stat-icon">
+        ◌
+      </div>
+
+      <div>
+        <strong>~90%</strong>
+        <span>Validation time reduced</span>
+      </div>
+
+    </div>
+
+
+    <div class="hero-stat">
+
+      <div class="stat-icon">
+        ◇
+      </div>
+
+      <div>
+        <strong>30+</strong>
+        <span>REST APIs engineered</span>
+      </div>
+
+    </div>
+
+
+    <div class="hero-stat">
+
+      <div class="stat-icon">
+        ◎
+      </div>
+
+      <div>
+        <strong>15K+</strong>
+        <span>Documents in RAG corpus</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <!-- =====================================================
+     ABOUT
+====================================================== -->
+
+<section
+  id="about"
+  class="section content-section observe-section"
+>
+
+  <div class="section-heading reveal">
+    <span>01</span>
+    <h2>About me</h2>
+    <i></i>
+  </div>
+
+
+  <div class="about-grid">
+
+
+    <!-- LEFT -->
+
+    <div class="about-lead reveal">
+
+      <p class="about-label">
+        WHO I AM
+      </p>
+
+      <p class="big-copy">
+        I build at the intersection of
+        <em>AI intelligence</em>
+        and
+        <em>software engineering.</em>
+      </p>
+
+      <p class="about-note">
+        My work spans the path from intelligent models to usable
+        engineering systems — combining machine learning, generative AI,
+        retrieval, APIs and automation into practical applications.
+      </p>
+
+
+      <div class="about-focus-list">
+
+        <div class="about-focus-item">
+
+          <span>01</span>
+
+          <div>
+            <strong>Intelligent systems</strong>
+
+            <small>
+              Agentic AI · LLMs · Hybrid RAG
+            </small>
+          </div>
+
+          <i>↗</i>
+
         </div>
-        <div class="hero-metrics">
-          <div><strong>9.43</strong><span>CGPA</span></div>
-          <div><strong>90%</strong><span>Validation time saved</span></div>
-          <div><strong>30+</strong><span>REST APIs built</span></div>
+
+
+        <div class="about-focus-item">
+
+          <span>02</span>
+
+          <div>
+            <strong>Engineering systems</strong>
+
+            <small>
+              APIs · Databases · Docker · Cloud
+            </small>
+          </div>
+
+          <i>↗</i>
+
+        </div>
+
+
+        <div class="about-focus-item">
+
+          <span>03</span>
+
+          <div>
+            <strong>Applied AI</strong>
+
+            <small>
+              Machine Learning · NLP · Computer Vision
+            </small>
+          </div>
+
+          <i>↗</i>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT CARD -->
+
+    <div class="about-card glass reveal">
+
+      <div class="about-card-glow"></div>
+
+      <div class="about-card-grid"></div>
+
+
+      <div class="profile-line">
+
+        <span class="profile-monogram">
+          MA
+        </span>
+
+        <div>
+
+          <strong>
+            Mohammed Aftab Ahamed
+          </strong>
+
+          <small>
+            AI / ML Engineer
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card-description">
+
+        <span class="card-label">
+          ENGINEERING PROFILE
+        </span>
+
+        <p>
+          Hands-on industry experience at Nokia developing Python
+          automation solutions, alongside AI projects across Agentic AI,
+          Hybrid RAG, LLMs, computer vision and machine learning.
+        </p>
+
+      </div>
+
+
+      <div class="mini-meta-grid">
+
+        <div>
+
+          <span>
+            Degree
+          </span>
+
+          <strong>
+            B.E. Artificial Intelligence & Machine Learning
+          </strong>
+
+        </div>
+
+
+        <div>
+
+          <span>
+            College
+          </span>
+
+          <strong>
+            New Horizon College of Engineering
+          </strong>
+
+        </div>
+
+
+        <div>
+
+          <span>
+            Graduation
+          </span>
+
+          <strong>
+            2026
+          </strong>
+
+        </div>
+
+
+        <div>
+
+          <span>
+            CGPA
+          </span>
+
+          <strong class="meta-accent">
+            9.43 / 10
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card-footer">
+
+        <span>
+          BENGALURU · INDIA
+        </span>
+
+        <span>
+          AI / ML · FULL STACK
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+    <!-- =====================================================
+     EXPERIENCE
+====================================================== -->
+
+<section
+  id="experience"
+  class="section content-section observe-section"
+>
+
+  <div class="section-heading reveal">
+    <span>02</span>
+    <h2>Experience</h2>
+    <i></i>
+  </div>
+
+
+  <article class="experience-card glass reveal">
+
+    <div class="exp-top">
+
+      <div class="exp-company-wrap">
+
+        <div class="company-mark">
+  <img
+    src="https://cdn.simpleicons.org/nokia"
+    alt="Nokia"
+  />
+</div>
+
+      </div>
+
+
+      <div class="exp-period">
+
+        <span>01 YEAR</span>
+
+        <p>
+          AUG 2025 — JUL 2026
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="exp-summary">
+
+      <div>
+        <span class="exp-label">
+          ROLE
+        </span>
+
+        <p>
+          Python Automation · AI / ML · Engineering
+        </p>
+      </div>
+
+      <div>
+        <span class="exp-label">
+          IMPACT
+        </span>
+
+        <p>
+          Built automation and validation workflows
+          used across internal engineering and QA teams.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="impact-strip">
+
+      <div>
+        <strong>~90%</strong>
+        <span>validation time reduced</span>
+      </div>
+
+      <div>
+        <strong>500+</strong>
+        <span>pages processed</span>
+      </div>
+
+      <div>
+        <strong>&lt;60s</strong>
+        <span>workflow execution</span>
+      </div>
+
+      <div>
+        <strong>3+</strong>
+        <span>R&amp;D / QA teams</span>
+      </div>
+
+    </div>
+
+
+    <div class="exp-details">
+
+      <div class="exp-detail">
+
+        <span>01</span>
+
+        <p>
+          Developed Python automation workflows that
+          significantly reduced manual validation effort.
+        </p>
+
+      </div>
+
+
+      <div class="exp-detail">
+
+        <span>02</span>
+
+        <p>
+          Processed 500+ pages through automated
+          document and validation pipelines.
+        </p>
+
+      </div>
+
+
+      <div class="exp-detail">
+
+        <span>03</span>
+
+        <p>
+          Engineered workflows capable of completing
+          execution in under 60 seconds.
+        </p>
+
+      </div>
+
+
+      <div class="exp-detail">
+
+        <span>04</span>
+
+        <p>
+          Supported engineering workflows used by
+          multiple R&amp;D and QA teams.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="exp-footer">
+
+      <span>
+        NOKIA · STUDENT INTERNSHIP
+      </span>
+
+      <span>
+        BENGALURU · INDIA
+      </span>
+
+    </div>
+
+  </article>
+
+</section>
+
+
+
+    <!-- =====================================================
+     PROJECTS
+====================================================== -->
+
+<section
+  id="projects"
+  class="section content-section observe-section"
+>
+
+  <div class="section-heading reveal">
+    <span>03</span>
+    <h2>Selected projects</h2>
+    <i></i>
+  </div>
+
+
+  <p class="section-intro reveal project-intro">
+    AI systems and full-stack applications built around
+    real engineering problems — from cybersecurity and
+    retrieval to intelligent job automation and computer vision.
+  </p>
+
+
+  <div class="projects-grid">
+
+
+    <!-- PROJECT 01 -->
+
+    <article class="project-card project-feature glass reveal">
+
+      <div class="project-top">
+
+        <span class="project-number">
+          01
+        </span>
+
+        <span class="project-type">
+          AGENTIC AI · CYBERSECURITY
+        </span>
+
+        <a
+          class="project-link"
+          href="https://github.com/MoAftab-01/CyberShield-AI"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open CyberShield AI GitHub repository"
+        >
+          ↗
+        </a>
+
+      </div>
+
+
+      <div class="project-body">
+
+        <div class="project-heading">
+
+          <div>
+
+            <h3>
+              CyberShield AI
+            </h3>
+
+            <p>
+              Full-stack AI-powered cyber threat intelligence
+              platform combining Agentic AI, Hybrid RAG,
+              machine learning and production APIs.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="tags project-tech-tags">
+
+  <span class="tech-tag">
+    Agentic AI
+  </span>
+
+  <span class="tech-tag">
+    Hybrid RAG
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/langgraph"
+      alt=""
+    />
+    LangGraph
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/fastapi"
+      alt=""
+    />
+    FastAPI
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/react"
+      alt=""
+    />
+    React
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/postgresql"
+      alt=""
+    />
+    PostgreSQL
+  </span>
+
+</div>
+
+      </div>
+
+
+      <div class="project-metrics">
+
+        <div>
+          <strong>90%</strong>
+          <span>retrieval accuracy</span>
+        </div>
+
+        <div>
+          <strong>95%</strong>
+          <span>detection accuracy</span>
+        </div>
+
+        <div>
+          <strong>75%</strong>
+          <span>triage reduction</span>
+        </div>
+
+      </div>
+
+
+      <div class="project-footer">
+
+        <span>
+          30+ REST APIs · 15K+ documents
+        </span>
+
+        <span>
+          VIEW REPOSITORY ↗
+        </span>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 02 -->
+
+    <article class="project-card glass reveal">
+
+      <div class="project-top">
+
+        <span class="project-number">
+          02
+        </span>
+
+        <span class="project-type">
+          MULTI-AGENT · JOB INTELLIGENCE
+        </span>
+
+        <a
+          class="project-link"
+          href="https://github.com/MoAftab-01/ai-job-application-copilot"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open AI Job Application Copilot GitHub repository"
+        >
+          ↗
+        </a>
+
+      </div>
+
+
+      <div class="project-body">
+
+        <h3>
+          AI Job Application Copilot
+        </h3>
+
+        <p>
+          Multi-agent job intelligence platform designed
+          to automate job discovery, analysis, matching
+          and application workflows.
+        </p>
+
+
+        <div class="tags project-tech-tags">
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/langgraph"
+      alt=""
+    />
+    LangGraph
+  </span>
+
+  <span class="tech-tag">
+    Hybrid RAG
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/xgboost"
+      alt=""
+    />
+    XGBoost
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/fastapi"
+      alt=""
+    />
+    FastAPI
+  </span>
+
+  <span class="tech-tag">
+    LLMs
+  </span>
+
+</div>
+
+      </div>
+
+
+      <div class="project-metrics">
+
+        <div>
+          <strong>92%</strong>
+          <span>retrieval accuracy</span>
+        </div>
+
+        <div>
+          <strong>88%</strong>
+          <span>matching accuracy</span>
+        </div>
+
+        <div>
+          <strong>&lt;2s</strong>
+          <span>response time</span>
+        </div>
+
+      </div>
+
+
+      <div class="project-footer">
+
+        <span>
+          5-agent LangGraph architecture
+        </span>
+
+        <span>
+          VIEW REPOSITORY ↗
+        </span>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 03 -->
+
+    <article class="project-card glass reveal">
+
+      <div class="project-top">
+
+        <span class="project-number">
+          03
+        </span>
+
+        <span class="project-type">
+          COMPUTER VISION · OCR
+        </span>
+
+        <span class="project-link project-arrow-disabled">
+          ↗
+        </span>
+
+      </div>
+
+
+      <div class="project-body">
+
+        <h3>
+          AI Attendance System
+        </h3>
+
+        <p>
+          Computer-vision attendance system combining
+          face recognition and OCR to automate identity
+          verification and attendance workflows.
+        </p>
+
+
+        <div class="tags project-tech-tags">
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/opencv"
+      alt=""
+    />
+    OpenCV
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/deepface"
+      alt=""
+    />
+    DeepFace
+  </span>
+
+  <span class="tech-tag">
+    Tesseract OCR
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/python"
+      alt=""
+    />
+    Python
+  </span>
+
+  <span class="tech-tag">
+    Computer Vision
+  </span>
+
+</div>
+
+      </div>
+
+
+      <div class="project-metrics">
+
+        <div>
+          <strong>95%</strong>
+          <span>face recognition</span>
+        </div>
+
+        <div>
+          <strong>98%</strong>
+          <span>OCR accuracy</span>
+        </div>
+
+        <div>
+          <strong>80%</strong>
+          <span>manual errors reduced</span>
+        </div>
+
+      </div>
+
+
+      <div class="project-footer">
+
+        <span>
+          Computer vision · OCR pipeline
+        </span>
+
+        <span>
+          PROJECT DETAILS
+        </span>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+    <!-- =====================================================
+     SKILLS
+====================================================== -->
+
+<section id="skills" class="section content-section observe-section">
+
+  <div class="section-heading reveal">
+    <span>02</span>
+    <h2>Skills</h2>
+    <i></i>
+  </div>
+
+  <!-- SKILL MARQUEE -->
+  <div class="skills-marquee reveal">
+    <div class="skills-marquee-track">
+
+      <span>PYTHON</span>
+      <b>✦</b>
+      <span>PYTORCH</span>
+      <b>✦</b>
+      <span>LANGGRAPH</span>
+      <b>✦</b>
+      <span>RAG</span>
+      <b>✦</b>
+      <span>LLMs</span>
+      <b>✦</b>
+      <span>FASTAPI</span>
+      <b>✦</b>
+      <span>DOCKER</span>
+      <b>✦</b>
+      <span>AWS</span>
+      <b>✦</b>
+      <span>POSTGRESQL</span>
+      <b>✦</b>
+
+      <!-- duplicate for seamless loop -->
+      <span>PYTHON</span>
+      <b>✦</b>
+      <span>PYTORCH</span>
+      <b>✦</b>
+      <span>LANGGRAPH</span>
+      <b>✦</b>
+      <span>RAG</span>
+      <b>✦</b>
+      <span>LLMs</span>
+      <b>✦</b>
+      <span>FASTAPI</span>
+      <b>✦</b>
+      <span>DOCKER</span>
+      <b>✦</b>
+      <span>AWS</span>
+      <b>✦</b>
+      <span>POSTGRESQL</span>
+      <b>✦</b>
+
+    </div>
+  </div>
+
+
+  <!-- SKILLS GRID -->
+  <div class="skills-grid">
+
+    <!-- PROGRAMMING -->
+    <article class="skill-card glass reveal">
+
+      <div class="skill-card-top">
+        <span class="skill-number">01</span>
+        <span class="skill-icon">⌘</span>
+      </div>
+
+      <div class="skill-card-heading">
+        <span>CORE</span>
+        <h3>Programming</h3>
+      </div>
+
+      <p>
+        Building reliable software foundations with clean,
+        maintainable code.
+      </p>
+
+      <div class="skill-tags">
+        <span>Python</span>
+        <span>SQL</span>
+      </div>
+
+    </article>
+
+
+    <!-- AI / ML -->
+    <article class="skill-card glass reveal">
+
+      <div class="skill-card-top">
+        <span class="skill-number">02</span>
+        <span class="skill-icon">◎</span>
+      </div>
+
+      <div class="skill-card-heading">
+        <span>INTELLIGENCE</span>
+        <h3>AI / ML</h3>
+      </div>
+
+      <p>
+        Developing practical machine learning systems across
+        structured, language and vision problems.
+      </p>
+
+      <div class="skill-tags">
+        <span>Scikit-learn</span>
+        <span>TensorFlow</span>
+        <span>PyTorch</span>
+        <span>NumPy</span>
+        <span>Pandas</span>
+        <span>NLP</span>
+        <span>Computer Vision</span>
+        <span>XGBoost</span>
+      </div>
+
+    </article>
+
+
+    <!-- GENERATIVE AI -->
+    <article class="skill-card glass reveal">
+
+      <div class="skill-card-top">
+        <span class="skill-number">03</span>
+        <span class="skill-icon">✦</span>
+      </div>
+
+      <div class="skill-card-heading">
+        <span>GENERATIVE</span>
+        <h3>Generative AI</h3>
+      </div>
+
+      <p>
+        Designing intelligent applications around LLMs,
+        agents, retrieval and orchestration.
+      </p>
+
+      <div class="skill-tags">
+        <span>LLMs</span>
+        <span>Agentic AI</span>
+        <span>LangGraph</span>
+        <span>LangChain</span>
+        <span>Prompt Engineering</span>
+        <span>RAG</span>
+      </div>
+
+    </article>
+
+
+    <!-- BACKEND & CLOUD -->
+    <article class="skill-card glass reveal">
+
+      <div class="skill-card-top">
+        <span class="skill-number">04</span>
+        <span class="skill-icon">◈</span>
+      </div>
+
+      <div class="skill-card-heading">
+        <span>ENGINEERING</span>
+        <h3>Backend &amp; Cloud</h3>
+      </div>
+
+      <p>
+        Turning AI capabilities into scalable services,
+        APIs and deployable engineering systems.
+      </p>
+
+      <div class="skill-tags">
+        <span>FastAPI</span>
+        <span>REST APIs</span>
+        <span>PostgreSQL</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>AWS</span>
+        <span>Git / GitHub</span>
+      </div>
+
+    </article>
+
+
+    <!-- FRONTEND -->
+    <article class="skill-card glass reveal">
+
+      <div class="skill-card-top">
+        <span class="skill-number">05</span>
+        <span class="skill-icon">◇</span>
+      </div>
+
+      <div class="skill-card-heading">
+        <span>INTERFACE</span>
+        <h3>Frontend</h3>
+      </div>
+
+      <p>
+        Creating responsive interfaces that make complex
+        systems easy to use.
+      </p>
+
+      <div class="skill-tags">
+        <span>React</span>
+        <span>Tailwind CSS</span>
+      </div>
+
+    </article>
+
+
+    <!-- CERTIFICATIONS -->
+    <article class="skill-card skill-card-certifications glass reveal">
+
+      <div class="skill-card-top">
+        <span class="skill-number">06</span>
+        <span class="skill-icon">✓</span>
+      </div>
+
+      <div class="skill-card-heading">
+        <span>LEARNING</span>
+        <h3>Certifications</h3>
+      </div>
+
+      <p>
+        Continuous learning across software engineering,
+        data and machine learning.
+      </p>
+
+      <div class="certification-list">
+
+        <div class="certification-item">
+          <span>01</span>
+          <div>
+            <strong>NPTEL</strong>
+            <small>Computer Networks and Internet Protocols</small>
+          </div>
+          <i>↗</i>
+        </div>
+
+        <div class="certification-item">
+          <span>02</span>
+          <div>
+            <strong>IBM SkillsBuild</strong>
+            <small>Data Fundamentals</small>
+          </div>
+          <i>↗</i>
+        </div>
+
+        <div class="certification-item">
+          <span>03</span>
+          <div>
+            <strong>MLOps Workshop</strong>
+            <small>Kaushalya Technical Training</small>
+          </div>
+          <i>↗</i>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+
+    <!-- =====================================================
+     BEYOND ENGINEERING
+====================================================== -->
+
+<section id="more" class="section content-section beyond-section observe-section">
+
+  <div class="section-heading reveal">
+    <span>05</span>
+    <h2>Beyond engineering</h2>
+    <i></i>
+  </div>
+
+  <div class="beyond-intro reveal">
+
+    <div>
+      <p class="about-label">THE OTHER SIDE</p>
+
+      <h3>
+        Discipline outside code.
+        <span>Perspective inside it.</span>
+      </h3>
+    </div>
+
+    <p>
+      Engineering is only one part of how I work. Competitive sport,
+      problem solving and leadership have shaped the discipline,
+      persistence and focus I bring into technical work.
+    </p>
+
+  </div>
+
+
+  <div class="beyond-grid">
+
+
+    <!-- RUBIK'S CUBE -->
+    <article class="beyond-card beyond-featured glass reveal">
+
+      <div class="beyond-card-glow"></div>
+
+      <div class="beyond-card-top">
+        <span class="beyond-number">01</span>
+        <span class="beyond-symbol">◈</span>
+      </div>
+
+      <div class="beyond-visual cube-visual">
+        <span class="cube-face cube-face-one"></span>
+        <span class="cube-face cube-face-two"></span>
+        <span class="cube-face cube-face-three"></span>
+      </div>
+
+      <div class="beyond-content">
+
+        <span class="beyond-category">SPEEDSOLVING</span>
+
+        <h3>
+          Sub-15 sec
+          <br>
+          Rubik's Cube
+        </h3>
+
+        <p>
+          Speedsolving in competitive settings — built through
+          pattern recognition, repetition and precision.
+        </p>
+
+      </div>
+
+      <div class="beyond-footer">
+        <span>PRECISION</span>
+        <span>↗</span>
+      </div>
+
+    </article>
+
+
+    <!-- WRESTLING -->
+    <article class="beyond-card glass reveal">
+
+      <div class="beyond-card-top">
+        <span class="beyond-number">02</span>
+        <span class="beyond-symbol">◉</span>
+      </div>
+
+      <div class="beyond-content">
+
+        <span class="beyond-category">COMPETITIVE SPORT</span>
+
+        <h3>
+          National level
+          <br>
+          Wrestling
+        </h3>
+
+        <p>
+          Represented my university in competition, developing
+          resilience, discipline and composure under pressure.
+        </p>
+
+      </div>
+
+      <div class="beyond-footer">
+        <span>RESILIENCE</span>
+        <span>↗</span>
+      </div>
+
+    </article>
+
+
+    <!-- POWERLIFTING -->
+    <article class="beyond-card glass reveal">
+
+      <div class="beyond-card-top">
+        <span class="beyond-number">03</span>
+        <span class="beyond-symbol">△</span>
+      </div>
+
+      <div class="beyond-content">
+
+        <span class="beyond-category">STRENGTH</span>
+
+        <h3>
+          Silver medal
+          <br>
+          Powerlifting
+        </h3>
+
+        <p>
+          State-level competitive achievement built through
+          consistency, preparation and physical discipline.
+        </p>
+
+      </div>
+
+      <div class="beyond-footer">
+        <span>DISCIPLINE</span>
+        <span>↗</span>
+      </div>
+
+    </article>
+
+
+    <!-- RASHTRAPATI PURASKAR -->
+    <article class="beyond-card beyond-wide glass reveal">
+
+      <div class="beyond-card-top">
+        <span class="beyond-number">04</span>
+        <span class="beyond-symbol">✦</span>
+      </div>
+
+      <div class="beyond-content">
+
+        <span class="beyond-category">LEADERSHIP · SERVICE</span>
+
+        <h3>
+          Rashtrapati
+          <br>
+          Puraskar Scouting
+        </h3>
+
+        <p>
+          A national-level scouting recognition reflecting leadership,
+          teamwork, responsibility and community service.
+        </p>
+
+      </div>
+
+      <div class="beyond-footer">
+        <span>LEADERSHIP</span>
+        <span>↗</span>
+      </div>
+
+    </article>
+
+  </div>
+
+
+  <div class="beyond-bottom-line reveal">
+    <span>BEYOND THE SCREEN</span>
+
+    <div class="beyond-line">
+      <span></span>
+    </div>
+
+    <span>DISCIPLINE · FOCUS · LEADERSHIP</span>
+  </div>
+
+</section>
+
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <!-- =====================================================
+     CONTACT / HIRING
+====================================================== -->
+
+<section id="contact" class="section contact-section observe-section">
+
+  <div class="section-heading reveal">
+    <span>06</span>
+    <h2>Let's connect</h2>
+    <i></i>
+  </div>
+
+  <div class="contact-shell">
+
+    <!-- LEFT -->
+    <div class="contact-main reveal">
+
+      <p class="about-label">OPEN TO OPPORTUNITIES</p>
+
+      <h3>
+        Let's build something
+        <span>intelligent.</span>
+      </h3>
+
+      <p class="contact-intro">
+        I'm currently open to full-time opportunities across
+        AI / ML Engineering, Generative AI, Backend and
+        Full-Stack Engineering.
+      </p>
+
+      <div class="contact-status">
+        <span class="status-dot"></span>
+        <div>
+          <strong>Available for AI / ML roles</strong>
+          <small>Bengaluru · India · Open to opportunities</small>
         </div>
       </div>
-      <div class="scroll-cue"><span></span> Scroll to explore</div>
-    </section>
 
-    <section id="about" class="section content-section">
-      <div class="section-heading reveal"><span>01</span><h2>About me</h2></div>
-      <div class="about-grid">
-        <div class="about-lead reveal">
-          <p class="big-copy">I turn ideas in <em>AI</em> into reliable products — from retrieval pipelines and multi-agent workflows to production-ready APIs.</p>
+      <div class="contact-actions">
+
+        <a
+          class="button button-primary"
+          href="mailto:mohammedaftabahamed2@gmail.com"
+        >
+          Email me
+          <span>↗</span>
+        </a>
+
+        <a
+          class="button button-ghost"
+          href="./assets/Mohammed-Aftab-Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View résumé
+          <span>↓</span>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT -->
+    <div class="contact-card glass reveal">
+
+      <div class="contact-card-glow"></div>
+
+      <div class="contact-card-top">
+        <span class="card-label">CONTACT DETAILS</span>
+        <span class="contact-signal">● ONLINE</span>
+      </div>
+
+
+      <div class="contact-details">
+
+        <a
+          href="mailto:mohammedaftabahamed2@gmail.com"
+          class="contact-detail"
+        >
+          <span class="contact-detail-icon">@</span>
+
+          <div>
+            <small>EMAIL</small>
+            <strong>mohammedaftabahamed2@gmail.com</strong>
+          </div>
+
+          <span class="contact-arrow">↗</span>
+        </a>
+
+
+        <a
+          href="tel:+917483430911"
+          class="contact-detail"
+        >
+          <span class="contact-detail-icon">☎</span>
+
+          <div>
+            <small>PHONE</small>
+            <strong>+91 7483430911</strong>
+          </div>
+
+          <span class="contact-arrow">↗</span>
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/in/mo-aftab/"
+          target="_blank"
+          rel="noreferrer"
+          class="contact-detail"
+        >
+          <span class="contact-detail-icon">in</span>
+
+          <div>
+            <small>LINKEDIN</small>
+            <strong>linkedin.com/in/mo-aftab</strong>
+          </div>
+
+          <span class="contact-arrow">↗</span>
+        </a>
+
+
+        <a
+  href="https://github.com/MoAftab-01"
+  target="_blank"
+  rel="noreferrer"
+  class="contact-detail"
+>
+  <span class="contact-detail-icon brand-contact-icon">
+    <img
+      src="https://cdn.simpleicons.org/github"
+      alt=""
+    />
+  </span>
+
+  <div>
+    <small>GITHUB</small>
+    <strong>github.com/MoAftab-01</strong>
+  </div>
+
+  <span class="contact-arrow">↗</span>
+</a>
+<a
+  href="https://leetcode.com/u/Mo_Aftab/"
+  target="_blank"
+  rel="noreferrer"
+  class="contact-detail"
+>
+  <span class="contact-detail-icon brand-contact-icon">
+    <img
+      src="https://cdn.simpleicons.org/leetcode"
+      alt=""
+    />
+  </span>
+
+  <div>
+    <small>LEETCODE</small>
+    <strong>leetcode.com/u/Mo_Aftab</strong>
+  </div>
+
+  <span class="contact-arrow">↗</span>
+</a>
+      </div>
+
+
+      <div class="contact-card-footer">
+
+        <span>AI / ML ENGINEER</span>
+
+        <div class="contact-footer-line">
+          <span></span>
         </div>
-        <div class="about-card glass reveal">
-          <p>AI/ML Engineer with hands-on industry experience at Nokia, developing Python automation solutions and building scalable AI applications.</p>
-          <p>My work combines engineering discipline with modern AI: Agentic AI, Hybrid RAG, LLMs, LangGraph, FastAPI, PostgreSQL, Docker, and cloud deployment.</p>
-          <div class="mini-meta"><span>Education</span><strong>B.E. Artificial Intelligence & Machine Learning</strong><small>New Horizon College of Engineering · 2026</small></div>
-        </div>
+
+        <span>BENGALURU · INDIA</span>
+
       </div>
-    </section>
 
-    <section id="experience" class="section content-section">
-      <div class="section-heading reveal"><span>02</span><h2>Experience</h2></div>
-      <article class="experience-card glass reveal">
-        <div class="exp-top"><div><p class="company">NOKIA</p><h3>Student Intern</h3></div><p class="date">Aug 2025 — Jul 2026</p></div>
-        <div class="exp-grid">
-          <div><span class="exp-number">01</span><p>Developed a Python-based automation tool, reducing documentation validation time by approximately <strong>90%</strong>.</p></div>
-          <div><span class="exp-number">02</span><p>Automated validation workflows, processing <strong>500+ pages</strong> across hundreds of documents in under 60 seconds.</p></div>
-          <div><span class="exp-number">03</span><p>Collaborated with <strong>3+ R&D and QA teams</strong> using Git in an Agile environment.</p></div>
-          <div><span class="exp-number">04</span><p>Debugged and optimized workflows, improving reliability across 500+ pages of documentation.</p></div>
-        </div>
-      </article>
-    </section>
+    </div>
 
-    <section id="projects" class="section content-section">
-      <div class="section-heading reveal"><span>03</span><h2>Selected projects</h2></div>
-      <div class="project-list">
-        <article class="project-card glass reveal">
-          <div class="project-index">01</div>
-          <div class="project-main"><div class="project-head"><h3>CyberShield AI</h3><span>↗</span></div><p class="project-sub">AI-Powered Cyber Threat Intelligence Platform</p><p>Full-stack agentic security platform with 30+ REST APIs, Hybrid RAG over 15K+ documents, and AI-assisted vulnerability analysis.</p><div class="tags"><span>Agentic AI</span><span>Hybrid RAG</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Docker</span></div></div>
-          <div class="project-impact"><strong>90%</strong><span>retrieval</span><strong>95%</strong><span>detection accuracy</span><strong>75%</strong><span>triage reduction</span></div>
-        </article>
-        <article class="project-card glass reveal">
-          <div class="project-index">02</div>
-          <div class="project-main"><div class="project-head"><h3>AI Job Application Copilot</h3><span>↗</span></div><p class="project-sub">Multi-Agent · Hybrid RAG · ML</p><p>Five-agent LangGraph workflow for AI-powered job application automation, combining FAISS + BM25 retrieval and XGBoost matching.</p><div class="tags"><span>LangGraph</span><span>FastAPI</span><span>React</span><span>FAISS</span><span>BM25</span><span>XGBoost</span><span>AWS</span></div></div>
-          <div class="project-impact"><strong>92%</strong><span>retrieval</span><strong>88%</strong><span>matching accuracy</span><strong>&lt;2s</strong><span>response time</span></div>
-        </article>
-        <article class="project-card glass reveal">
-          <div class="project-index">03</div>
-          <div class="project-main"><div class="project-head"><h3>AI Attendance System</h3><span>↗</span></div><p class="project-sub">Computer Vision · OCR</p><p>Real-time attendance pipeline using OpenCV, DeepFace, and Tesseract OCR for face recognition and automated attendance capture.</p><div class="tags"><span>OpenCV</span><span>DeepFace</span><span>Tesseract OCR</span><span>Computer Vision</span></div></div>
-          <div class="project-impact"><strong>95%</strong><span>face recognition</span><strong>98%</strong><span>OCR accuracy</span><strong>80%</strong><span>fewer errors</span></div>
-        </article>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="portfolio-footer reveal">
+
+    <div class="footer-brand">
+      <span class="brand-mark">MA</span>
+
+      <div>
+        <strong>Mohammed Aftab Ahamed</strong>
+        <small>AI / ML Engineer · Full Stack Developer</small>
       </div>
-    </section>
+    </div>
 
-    <section id="skills" class="section content-section">
-      <div class="section-heading reveal"><span>04</span><h2>Toolkit</h2></div>
-      <div class="skills-grid">
-        <div class="skill-card glass reveal"><span>01</span><h3>Programming</h3><p>Python · SQL</p></div>
-        <div class="skill-card glass reveal"><span>02</span><h3>AI / ML</h3><p>Scikit-learn · TensorFlow · PyTorch · NumPy · Pandas · NLP · Computer Vision · XGBoost</p></div>
-        <div class="skill-card glass reveal"><span>03</span><h3>Generative AI</h3><p>LLMs · Agentic AI · LangGraph · LangChain · Prompt Engineering · RAG</p></div>
-        <div class="skill-card glass reveal"><span>04</span><h3>Backend & Cloud</h3><p>FastAPI · REST APIs · PostgreSQL · Docker · Kubernetes · AWS · Git/GitHub</p></div>
-        <div class="skill-card glass reveal"><span>05</span><h3>Frontend</h3><p>React · Tailwind CSS</p></div>
-        <div class="skill-card glass reveal"><span>06</span><h3>Certifications</h3><p>NPTEL Computer Networks and Internet Protocols · IBM SkillsBuild Data Fundamentals · MLOps Workshop</p></div>
-      </div>
-    </section>
+    <div class="footer-links">
 
-    <section id="more" class="section content-section compact-section">
-      <div class="section-heading reveal"><span>05</span><h2>Beyond code</h2></div>
-      <div class="traits glass reveal"><div><strong>Sub-15s</strong><span>Rubik's Cube speedsolving</span></div><div><strong>National</strong><span>University-level wrestling</span></div><div><strong>Silver</strong><span>State-level powerlifting</span></div><div><strong>Rashtrapati Puraskar</strong><span>National-level Scout</span></div></div>
-    </section>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
 
-    <section id="contact" class="section contact-section">
-      <div class="contact-inner reveal">
-        <p class="eyebrow">06 · CONTACT</p>
-        <h2>Let’s build something<br><span>intelligent.</span></h2>
-        <p>Open to AI/ML engineering opportunities, impactful products, and conversations around applied AI.</p>
-        <div class="contact-actions"><a class="button button-primary" href="mailto:mohammedaftabahamed2@gmail.com">mohammedaftabahamed2@gmail.com ↗</a><a class="button button-ghost" href="https://github.com/MoAftab-01" target="_blank" rel="noreferrer">GitHub ↗</a></div>
-      </div>
-      <footer><span>© 2026 Mohammed Aftab Ahamed</span><span>Built with curiosity + AI</span></footer>
-    </section>
+    </div>
+
+    <div class="footer-copy">
+      © 2026 Mohammed Aftab Ahamed
+    </div>
+
+  </footer>
+
+</section>
   </main>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
