@@ -1606,12 +1606,12 @@ a {
 .contact-section h2 {
   font-size:
     clamp(
-      3.5rem,
-      7vw,
-      7rem
+      2.2rem,
+      4vw,
+      3.8rem
     );
 
-  margin-top: 22px;
+  margin-top: 0;
 }
 
 .contact-section > div > p:not(.eyebrow) {
@@ -2899,14 +2899,6 @@ a {
   letter-spacing:-.055em;
 }
 
-.beyond-intro{
-  max-width:620px;
-  margin:26px 0 0;
-  color:#85837d;
-  font-size:.9rem;
-  line-height:1.75;
-}
-
 .beyond-list{
   border-top:1px solid rgba(255,255,255,.08);
 }
@@ -3066,10 +3058,9 @@ a {
 ================================ */
 
 .contact-section{
-  min-height:80vh;
-  display:flex;
-  align-items:center;
-  padding-bottom:55px;
+  display:block;
+  min-height:0;
+  padding:145px 0 55px;
 }
 
 .contact-wrap{
@@ -3140,12 +3131,6 @@ a {
 
 
 /* CONTACT ACTIONS */
-
-.contact-actions{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
 
 .contact-primary{
   display:flex;
@@ -3489,16 +3474,16 @@ body{
   left:50%;
   right:auto;
 
-  width:min(1180px,calc(100% - 40px));
+  width:min(var(--max),90vw);
   height:70px;
 
   transform:translateX(-50%);
 
   display:grid;
-  grid-template-columns:auto 1fr auto;
+  grid-template-columns:1fr auto 1fr;
   align-items:center;
 
-  padding:0 16px 0 20px;
+  padding:0 20px;
 
   border:1px solid rgba(255,255,255,.09);
   border-radius:12px;
@@ -3551,6 +3536,8 @@ body{
   display:flex;
   align-items:center;
   gap:11px;
+
+  justify-self:start;
 
   text-decoration:none;
 
@@ -3654,6 +3641,8 @@ body{
   align-items:center;
   gap:12px;
 
+  justify-self:end;
+
   padding:11px 16px;
 
   border:1px solid rgba(0,217,154,.48);
@@ -3744,6 +3733,11 @@ body{
 
 .section-heading > span{
   color:var(--accent);
+
+  /* Fixed number gutter so every section title starts on the
+     same left edge (proportional figures made 01 narrower than 02). */
+  min-width:2ch;
+  font-variant-numeric:tabular-nums;
 }
 
 .section-heading h2{
@@ -6288,7 +6282,7 @@ body{
 
   overflow:hidden;
 
-  padding:26px;
+  padding:30px;
 
   border-radius:18px;
 
@@ -6850,7 +6844,7 @@ body{
 .skill-card{
   position:relative;
   min-height:330px;
-  padding:26px;
+  padding:30px;
   overflow:hidden;
   isolation:isolate;
 
@@ -7310,7 +7304,7 @@ body{
 .beyond-card{
   position:relative;
   min-height:360px;
-  padding:26px;
+  padding:30px;
   overflow:hidden;
   isolation:isolate;
 
@@ -7949,7 +7943,7 @@ body{
 .contact-card{
   position:relative;
   overflow:hidden;
-  padding:27px;
+  padding:30px;
 
   border:1px solid rgba(255,255,255,.075);
 
@@ -9319,7 +9313,7 @@ body{
     position:absolute !important;
 
     top:auto !important;
-    right:4% !important;
+    right:0 !important;
     bottom:215px !important;
 
     width:310px !important;
@@ -9340,15 +9334,15 @@ body{
   .hero-stats{
     position:absolute !important;
 
-    left:auto !important;
-    right:4% !important;
+    left:0 !important;
+    right:0 !important;
 
     top:auto !important;
     bottom:28px !important;
 
-    width:900px !important;
+    width:auto !important;
     min-width:0 !important;
-    max-width:calc(100% - 8%) !important;
+    max-width:none !important;
 
     min-height:118px !important;
 
@@ -9414,14 +9408,14 @@ body{
 @media (min-width:1300px){
 
   .hero-side-card{
-    right:4% !important;
+    right:0 !important;
     bottom:215px !important;
     width:320px !important;
   }
 
   .hero-stats{
-    right:4% !important;
-    width:900px !important;
+    right:0 !important;
+    width:auto !important;
   }
 
 }
@@ -9434,14 +9428,14 @@ body{
 @media (min-width:1600px){
 
   .hero-side-card{
-    right:6% !important;
+    right:0 !important;
     bottom:220px !important;
     width:330px !important;
   }
 
   .hero-stats{
-    right:6% !important;
-    width:900px !important;
+    right:0 !important;
+    width:auto !important;
   }
 
 }
