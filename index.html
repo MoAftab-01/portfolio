@@ -31,7 +31,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 
 <body>
@@ -385,6 +385,17 @@
       src="https://cdn.simpleicons.org/gmail"
       alt="Email"
     />
+  </a>
+
+  <a
+    class="hero-phone-link"
+    href="tel:+917483430911"
+    aria-label="Call Mohammed Aftab Ahamed at +91 7483430911"
+    title="Call +91 7483430911"
+  >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7A2 2 0 0 1 22 16.92z" />
+    </svg>
   </a>
 
 </div>
@@ -778,22 +789,23 @@
 
       <div>
         <span class="exp-label">
-          ROLE
+          IMPACT
         </span>
 
         <p>
-          Python Automation · AI / ML · Engineering
+          Reduced validation time by ~90% by automating
+          document processing and QA workflows used by
+          multiple engineering teams.
         </p>
       </div>
 
       <div>
         <span class="exp-label">
-          IMPACT
+          ROLE
         </span>
 
         <p>
-          Built automation and validation workflows
-          used across internal engineering and QA teams.
+          Python Automation · AI / ML · Engineering
         </p>
       </div>
 
@@ -936,6 +948,16 @@
         </span>
 
         <a
+          class="project-live-link"
+          href="https://cybershieldai-security.vercel.app/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open CyberShield AI live application"
+        >
+          Live demo <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
           class="project-link"
           href="https://github.com/MoAftab-01/CyberShield-AI"
           target="_blank"
@@ -952,7 +974,7 @@
 
         <div class="project-heading">
 
-          <div>
+          <div class="project-copy">
 
             <h3>
               CyberShield AI
@@ -963,6 +985,38 @@
               platform combining Agentic AI, Hybrid RAG,
               machine learning and production APIs.
             </p>
+
+            <div class="project-architecture" role="img" aria-label="CyberShield AI workflow: threat documents flow through hybrid retrieval into agentic threat analysis">
+              <div>
+                <small>THREAT SOURCES</small>
+                <strong>15K+ documents</strong>
+              </div>
+              <span aria-hidden="true">→</span>
+              <div>
+                <small>RETRIEVAL</small>
+                <strong>Hybrid RAG</strong>
+              </div>
+              <span aria-hidden="true">→</span>
+              <div>
+                <small>ANALYSIS</small>
+                <strong>Agentic AI</strong>
+              </div>
+            </div>
+
+            <div class="project-story">
+              <div>
+                <small>PROBLEM</small>
+                <p>Threat signals spread across large document sets.</p>
+              </div>
+              <div>
+                <small>BUILD</small>
+                <p>Hybrid retrieval paired with agentic analysis and APIs.</p>
+              </div>
+              <div>
+                <small>OUTCOME</small>
+                <p>90% retrieval accuracy and 75% less triage effort.</p>
+              </div>
+            </div>
 
           </div>
 
@@ -1040,10 +1094,6 @@
 
         <span>
           30+ REST APIs · 15K+ documents
-        </span>
-
-        <span>
-          VIEW REPOSITORY ↗
         </span>
 
       </div>
