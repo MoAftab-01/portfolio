@@ -41,6 +41,13 @@ img {
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+/* Light readability improvements - slightly lighter backgrounds for cards */
+.about-card, .experience-card, .project-card, .skill-card, .beyond-card, .contact-card, .hero-side-card {
+  background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018)) !important;
+  border-color: rgba(255,255,255,.08) !important;
 }
 
 button,
