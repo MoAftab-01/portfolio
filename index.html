@@ -78,7 +78,10 @@
     <a href="#home" class="active">Home</a>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
     <a href="#projects">Projects</a>
+    <a href="#hackathons">Hackathons</a>
     <a href="#skills">Skills</a>
     <a href="#more">Beyond</a>
     <a href="#contact">Contact</a>
@@ -149,11 +152,38 @@
       </a>
 
       <a
+        href="#education"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>02.5</span>
+        <strong>Education</strong>
+        <i>↗</i>
+      </a>
+
+      <a
+        href="#certificates"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>03</span>
+        <strong>Certificates</strong>
+        <i>↗</i>
+      </a>
+
+      <a
         href="#projects"
         onclick="document.getElementById('mobile-nav-toggle').checked=false"
       >
         <span>03</span>
         <strong>Projects</strong>
+        <i>↗</i>
+      </a>
+
+      <a
+        href="#hackathons"
+        onclick="document.getElementById('mobile-nav-toggle').checked=false"
+      >
+        <span>03.5</span>
+        <strong>Hackathons</strong>
         <i>↗</i>
       </a>
 
@@ -238,6 +268,27 @@
       data-section="projects"
     >
       <span>03</span>
+    </a>
+
+    <a
+      href="#certificates"
+      data-section="certificates"
+    >
+      <span>03</span>
+    </a>
+
+    <a
+      href="#education"
+      data-section="education"
+    >
+      <span>02.5</span>
+    </a>
+
+    <a
+      href="#hackathons"
+      data-section="hackathons"
+    >
+      <span>03.5</span>
     </a>
 
     <a
@@ -913,6 +964,153 @@
 </section>
 
 
+    <!-- =====================================================
+     EDUCATION
+====================================================== -->
+
+<section id="education" class="section content-section observe-section">
+
+  <div class="section-heading reveal">
+    <span>02.5</span>
+    <h2>Education</h2>
+    <i></i>
+  </div>
+
+  <div class="education-card glass reveal">
+    <div class="education-icon">
+      <span aria-hidden="true">&#127891;</span>
+    </div>
+    <div class="education-body">
+      <h3>New Horizon College of Engineering</h3>
+      <p>Bachelor of Engineering (B.E.) — Artificial Intelligence and Machine Learning</p>
+      <div class="education-meta">
+        <span>Expected Graduation: 2026</span>
+        <span>CGPA: 9.43 / 10</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <!-- =====================================================
+     CERTIFICATIONS
+====================================================== -->
+
+<section id="certificates" class="section content-section observe-section">
+
+  <div class="section-heading reveal">
+    <span>03</span>
+    <h2>Certifications &amp; Learning</h2>
+    <i></i>
+  </div>
+
+  <p class="section-intro reveal">
+    Continuously strengthening my skills across AI development, networking, and data.
+  </p>
+
+  <div class="certificates-grid">
+
+    <!-- CERTIFICATE 1 -->
+    <article class="certificate-card glass reveal">
+      <div class="certificate-preview">
+        <img
+          src="assets/cert-claude-code-101.png"
+          alt="Claude Code 101 certificate preview"
+          loading="lazy"
+        />
+      </div>
+      <div class="certificate-body">
+        <h3>Claude Code 101</h3>
+        <span class="certificate-issuer">Claude Academy</span>
+        <span class="certificate-category">AI Development</span>
+        <p class="certificate-desc">
+          Introduction to Claude Code capabilities, agent patterns, and best practices for AI-assisted development.
+        </p>
+        <div class="certificate-actions">
+          <a
+            class="button button-ghost"
+            href="https://academy.claude.com/verify/51b936355dfd7fb33c75b5703a09fcc3"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Verify Claude Code 101 certificate"
+          >
+            Verify Certificate <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CERTIFICATE 2 -->
+    <article class="certificate-card glass reveal">
+      <div class="certificate-preview">
+        <img
+          src="assets/cert-computer-networks-placeholder.svg"
+          alt="Computer Networks and Internet Protocols certificate placeholder — real image or PDF needed"
+          loading="lazy"
+        />
+      </div>
+      <div class="certificate-body">
+        <h3>Computer Networks and Internet Protocols</h3>
+        <span class="certificate-issuer">NPTEL</span>
+        <span class="certificate-category">Computer Networks</span>
+        <p class="certificate-desc">
+          Core networking concepts, protocol stacks, TCP/IP, routing, and internet architecture — foundational for distributed AI systems.
+        </p>
+        <div class="certificate-actions">
+          <a
+            class="button button-ghost"
+            href="https://nptel.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit NPTEL official website"
+          >
+            Visit Issuer <span>↗</span>
+          </a>
+          <p class="certificate-note">
+            Individual verification URL not available — certificate image or PDF needed.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CERTIFICATE 3 -->
+    <article class="certificate-card glass reveal">
+      <div class="certificate-preview">
+        <img
+          src="assets/cert-data-fundamentals-placeholder.svg"
+          alt="Data Fundamentals certificate placeholder — real image or PDF needed"
+          loading="lazy"
+        />
+      </div>
+      <div class="certificate-body">
+        <h3>Data Fundamentals</h3>
+        <span class="certificate-issuer">IBM SkillsBuild</span>
+        <span class="certificate-category">Data</span>
+        <p class="certificate-desc">
+          Essential data literacy, analysis principles, and foundational skills for working with structured information in AI pipelines.
+        </p>
+        <div class="certificate-actions">
+          <a
+            class="button button-ghost"
+            href="https://skillsbuild.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit IBM SkillsBuild official website"
+          >
+            Visit Issuer <span>↗</span>
+          </a>
+          <p class="certificate-note">
+            Individual verification URL not available — certificate image or PDF needed.
+          </p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</section>
+
 
     <!-- =====================================================
      PROJECTS
@@ -988,40 +1186,38 @@
             </h3>
 
             <p>
-              Full-stack AI-powered cyber threat intelligence
-              platform combining Agentic AI, Hybrid RAG,
-              machine learning and production APIs.
+              Full-stack AI-powered cyber threat intelligence platform combining Agentic AI, Hybrid RAG, machine learning, and production APIs.
             </p>
 
-            <div class="project-architecture" role="img" aria-label="CyberShield AI workflow: threat documents flow through hybrid retrieval into agentic threat analysis">
+            <div class="project-architecture" role="img" aria-label="CyberShield AI architecture: threat intelligence input, BM25 + FAISS retrieval, RRF + MMR ranking">
               <div>
-                <small>THREAT SOURCES</small>
-                <strong>15K+ documents</strong>
+                <small>INPUT</small>
+                <strong>Threat intelligence</strong>
               </div>
               <span aria-hidden="true">→</span>
               <div>
                 <small>RETRIEVAL</small>
-                <strong>Hybrid RAG</strong>
+                <strong>BM25 + FAISS</strong>
               </div>
               <span aria-hidden="true">→</span>
               <div>
-                <small>ANALYSIS</small>
-                <strong>Agentic AI</strong>
+                <small>RANKING</small>
+                <strong>RRF + MMR</strong>
               </div>
             </div>
 
             <div class="project-story">
               <div>
                 <small>PROBLEM</small>
-                <p>Threat signals spread across large document sets.</p>
+                <p>Threat intelligence signals need structured retrieval, ranking, and analysis.</p>
               </div>
               <div>
                 <small>BUILD</small>
-                <p>Hybrid retrieval paired with agentic analysis and APIs.</p>
+                <p>FastAPI, React, TypeScript, PostgreSQL (Neon), Docker, JWT auth; Hybrid RAG with BM25 + FAISS, RRF, and MMR.</p>
               </div>
               <div>
                 <small>OUTCOME</small>
-                <p>90% retrieval accuracy and 75% less triage effort.</p>
+                <p>Production platform with 30+ REST APIs; 85% Recall@5, 0.6287 MRR, 87.5% accuracy, 100% precision across 169 tests.</p>
               </div>
             </div>
 
@@ -1033,26 +1229,10 @@
         <div class="tags project-tech-tags">
 
   <span class="tech-tag">
-    Agentic AI
+    Python
   </span>
 
   <span class="tech-tag">
-    Hybrid RAG
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/langgraph"
-      alt=""
-    />
-    LangGraph
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/fastapi"
-      alt=""
-    />
     FastAPI
   </span>
 
@@ -1072,6 +1252,54 @@
     PostgreSQL
   </span>
 
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/neondb"
+      alt=""
+    />
+    Neon
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/docker"
+      alt=""
+    />
+    Docker
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/jest"
+      alt=""
+    />
+    JWT
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/faiss"
+      alt=""
+    />
+    FAISS
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/huggingface"
+      alt=""
+    />
+    Hybrid RAG
+  </span>
+
+  <span class="tech-tag">
+    TypeScript
+  </span>
+
+  <span class="tech-tag">
+    BM25
+  </span>
+
 </div>
 
       </div>
@@ -1080,18 +1308,28 @@
       <div class="project-metrics">
 
         <div>
-          <strong>90%</strong>
-          <span>retrieval accuracy</span>
+          <strong>85%</strong>
+          <span>Recall@5</span>
         </div>
 
         <div>
-          <strong>95%</strong>
-          <span>detection accuracy</span>
+          <strong>0.6287</strong>
+          <span>MRR</span>
         </div>
 
         <div>
-          <strong>75%</strong>
-          <span>triage reduction</span>
+          <strong>87.5%</strong>
+          <span>URL risk triage accuracy</span>
+        </div>
+
+        <div>
+          <strong>100%</strong>
+          <span>URL risk triage precision</span>
+        </div>
+
+        <div>
+          <strong>169</strong>
+          <span>tests</span>
         </div>
 
       </div>
@@ -1100,7 +1338,7 @@
       <div class="project-footer">
 
         <span>
-          30+ REST APIs · 15K+ documents
+          30+ REST APIs · Hybrid RAG · 169 tests
         </span>
 
       </div>
@@ -1110,7 +1348,7 @@
 
     <!-- PROJECT 02 -->
 
-    <article class="project-card glass reveal">
+    <article class="project-card project-feature glass reveal">
 
       <div class="project-top">
 
@@ -1119,15 +1357,15 @@
         </span>
 
         <span class="project-type">
-          MULTI-AGENT · JOB INTELLIGENCE
+          VOICE AI · HYBRID RAG · GENERATIVE AI
         </span>
 
         <a
           class="project-link"
-          href="https://github.com/MoAftab-01/ai-job-application-copilot"
+          href="https://github.com/MoAftab-01/better-call-kanoon"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Open AI Job Application Copilot GitHub repository"
+          aria-label="Open Better Call Kanoon GitHub repository"
         >
           ↗
         </a>
@@ -1138,50 +1376,60 @@
       <div class="project-body">
 
         <h3>
-          AI Job Application Copilot
+          Better Call Kanoon
         </h3>
 
         <p>
-          Multi-agent job intelligence platform designed
-          to automate job discovery, analysis, matching
-          and application workflows.
+          Voice AI Legal Information Assistant — multilingual AI legal assistant built with FastAPI, Groq LLMs, FAISS, BM25, and Hybrid RAG indexing 1.8K+ legal chunks across 7+ Indian laws. Supports English and Hindi voice interaction with legal guardrails. Future roadmap: real-time, one-call legal assistance with telephony integration.
         </p>
 
 
         <div class="tags project-tech-tags">
 
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/langgraph"
-      alt=""
-    />
-    LangGraph
+  <span class="tech-tag">
+    Python
   </span>
 
   <span class="tech-tag">
-    Hybrid RAG
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/xgboost"
-      alt=""
-    />
-    XGBoost
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/fastapi"
-      alt=""
-    />
     FastAPI
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/groq"
+      alt=""
+    />
+    Groq
   </span>
 
   <span class="tech-tag">
     LLMs
   </span>
 
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/faiss"
+      alt=""
+    />
+    FAISS
+  </span>
+
+  <span class="tech-tag">
+    BM25
+  </span>
+
+  <span class="tech-tag tech-tag-logo">
+    <img
+      src="https://cdn.simpleicons.org/langgraph"
+      alt=""
+    />
+    Hybrid RAG
+  </span>
+
+  <span class="tech-tag">
+    Voice AI
+  </span>
+
 </div>
 
       </div>
@@ -1190,18 +1438,23 @@
       <div class="project-metrics">
 
         <div>
-          <strong>92%</strong>
+          <strong>90%+</strong>
           <span>retrieval accuracy</span>
         </div>
 
         <div>
-          <strong>88%</strong>
-          <span>matching accuracy</span>
+          <strong>1.8K+</strong>
+          <span>legal chunks indexed</span>
         </div>
 
         <div>
-          <strong>&lt;2s</strong>
-          <span>response time</span>
+          <strong>7+</strong>
+          <span>Indian laws covered</span>
+        </div>
+
+        <div>
+          <strong>30+</strong>
+          <span>verified queries</span>
         </div>
 
       </div>
@@ -1210,125 +1463,145 @@
       <div class="project-footer">
 
         <span>
-          5-agent LangGraph architecture
+          English + Hindi · Voice interaction · Legal guardrails · Telephony planned
         </span>
 
-        <span>
-          VIEW REPOSITORY ↗
-        </span>
+        <a
+          class="button button-ghost"
+          href="https://github.com/MoAftab-01/better-call-kanoon"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Repository <span>↗</span>
+        </a>
 
       </div>
 
     </article>
 
 
-    <!-- PROJECT 03 -->
+    </div>
 
-    <article class="project-card glass reveal">
 
-      <div class="project-top">
+  <div class="projects-cta reveal">
 
-        <span class="project-number">
-          03
-        </span>
+    <a
+      class="button button-ghost projects-cta-link"
+      href="projects.html"
+      aria-label="Explore more projects"
+    >
+      Explore More Projects
+      <span aria-hidden="true">→</span>
+    </a>
 
-        <span class="project-type">
-          COMPUTER VISION · OCR
-        </span>
+  </div>
 
-        <span class="project-link project-arrow-disabled">
+</section>
+
+
+
+    <!-- =====================================================
+     HACKATHONS
+====================================================== -->
+
+<section id="hackathons" class="section content-section observe-section">
+
+  <div class="section-heading reveal">
+    <span>03.5</span>
+    <h2>Hackathons &amp; Innovation</h2>
+    <i></i>
+  </div>
+
+  <p class="section-intro reveal">
+    Building practical AI solutions under real-world constraints — from financial decision agents to gamified urban exploration.
+  </p>
+
+  <div class="hackathons-grid">
+
+    <article class="hackathon-card glass reveal">
+
+      <div class="hackathon-top">
+        <span class="hackathon-number">01</span>
+        <span class="hackathon-type">AI AGENTS · OCR · FINANCIAL INTELLIGENCE</span>
+        <a
+          class="hackathon-link"
+          href="https://github.com/MoAftab-01/hackerrank-buy-or-wait"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Buy or Wait on GitHub"
+        >
           ↗
-        </span>
-
+        </a>
       </div>
 
-
-      <div class="project-body">
-
-        <h3>
-          AI Attendance System
-        </h3>
-
+      <div class="hackathon-body">
+        <h3>Buy or Wait — AI Financial Decision Agent</h3>
         <p>
-          Computer-vision attendance system combining
-          face recognition and OCR to automate identity
-          verification and attendance workflows.
+          Built a deterministic AI-inspired financial decision agent for a HackerRank Orchestrate hackathon. It analyzes financial context, recurring and pending transactions, payment options, and supporting media to recommend actionable purchase decisions. The system uses OCR-based evidence extraction and validation to improve traceability and avoid relying on hardcoded answers.
         </p>
-
-
-        <div class="tags project-tech-tags">
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/opencv"
-      alt=""
-    />
-    OpenCV
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/deepface"
-      alt=""
-    />
-    DeepFace
-  </span>
-
-  <span class="tech-tag">
-    Tesseract OCR
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/python"
-      alt=""
-    />
-    Python
-  </span>
-
-  <span class="tech-tag">
-    Computer Vision
-  </span>
-
-</div>
-
+        <div class="tags hackathon-tags">
+          <span>AI Agents</span>
+          <span>OCR</span>
+          <span>Financial Intelligence</span>
+          <span>Python</span>
+        </div>
       </div>
 
-
-      <div class="project-metrics">
-
-        <div>
-          <strong>95%</strong>
-          <span>face recognition</span>
-        </div>
-
-        <div>
-          <strong>98%</strong>
-          <span>OCR accuracy</span>
-        </div>
-
-        <div>
-          <strong>80%</strong>
-          <span>manual errors reduced</span>
-        </div>
-
-      </div>
-
-
-      <div class="project-footer">
-
-        <span>
-          Computer vision · OCR pipeline
-        </span>
-
-        <span>
-          PROJECT DETAILS
-        </span>
-
+      <div class="hackathon-footer">
+        <a
+          class="button button-ghost"
+          href="https://github.com/MoAftab-01/hackerrank-buy-or-wait"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on GitHub <span>↗</span>
+        </a>
       </div>
 
     </article>
 
+
+    <article class="hackathon-card glass reveal">
+
+      <div class="hackathon-top">
+        <span class="hackathon-number">02</span>
+        <span class="hackathon-type">AI · COMPUTER VISION · REAL-WORLD EXPLORATION</span>
+        <a
+          class="hackathon-link"
+          href="https://github.com/MoAftab-01/SideQuest-AI"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View SideQuest AI on GitHub"
+        >
+          ↗
+        </a>
+      </div>
+
+      <div class="hackathon-body">
+        <h3>SideQuest AI — Turn Your City Into a Game</h3>
+        <p>
+          An AI-powered exploration concept that turns real-world discoveries into personalized city quests. It combines AI-generated missions with a vision-model-based approach to verifying discoveries, encouraging users to explore their surroundings through interactive, gamified experiences.
+        </p>
+        <div class="tags hackathon-tags">
+          <span>Computer Vision</span>
+          <span>AI</span>
+          <span>Gamification</span>
+          <span>Real-World</span>
+        </div>
+      </div>
+
+      <div class="hackathon-footer">
+        <a
+          class="button button-ghost"
+          href="https://github.com/MoAftab-01/SideQuest-AI"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on GitHub <span>↗</span>
+        </a>
+      </div>
+
+    </article>
 
   </div>
 
