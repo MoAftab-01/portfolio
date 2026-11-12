@@ -17,7 +17,7 @@ Then visit `http://127.0.0.1:4173/`.
 - Homepage and featured projects: `index.html`
 - Additional projects and historical implementation notes: `projects.html`
 - Original design and effects: `styles.css`
-- Shared emerald palette and dark green glass colors: the single `:root` block in `styles.css`; `--accent` is emerald and `--lime` is the highlight color.
+- Shared emerald palette and dark green glass colors: the single `:root` block in `styles.css`; `--accent` is emerald across all highlights, buttons and interaction states.
 - Shared layout, reading scale and responsive refinements: `polish.css` (loaded last)
 - Navigation, scroll progress, reveal and pointer effects: `script.js`
 - Profile background: `assets/profile-bg.png`

@@ -84,3 +84,7 @@ Final validation executed:
 - Fresh HTTP checks returned 200 for all project repositories, both live demos, the Claude credential, all remaining icon URLs, NPTEL, IBM SkillsBuild and EY. The fresh run received 403 from LeetCode and HackerRank and 999 from current LinkedIn; these are automated-access limitations, not proof of a broken link. Existing destinations were preserved.
 
 The authorized commit message is `Finalize portfolio upgrade and restore emerald theme`. Only the seven named portfolio source/documentation files and the unchanged updated resume PDF are intended for staging. Temporary QA files, caches, logs and browser profiles are excluded. Git push and production-deployment confirmation are reported separately after publication; no domain or Vercel settings are changed.
+
+## Uniform green accents — 13 November 2026
+
+The owner requested removal of the remaining yellow-lime highlights shown in the hero screenshot. All stylesheet uses of the separate lime palette now use the existing emerald accent/RGB tokens, including headlines, statistics, credential text, metric panels, button glow and hover states. Removed the unused lime tokens and advanced both pages' stylesheet versions to refresh cached styles. The two generated certificate placeholder SVGs also use emerald instead of lime; genuine certificate artwork remains unchanged. Content, layout, JavaScript and the resume PDF are unchanged. Earlier references to lime highlights above describe the previous version and are superseded by this correction.
