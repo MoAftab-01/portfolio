@@ -23,13 +23,6 @@
 
   <title>Mohammed Aftab Ahamed | AI/ML Engineer</title>
 
-  <!-- Style: light readability improvements -->
-  <style>
-    /* Slightly lighter body background for better contrast */
-    html { scroll-behavior: smooth; }
-    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-  </style>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -38,10 +31,12 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="polish.css?v=4" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- BACKGROUND -->
   <div class="site-bg" aria-hidden="true">
@@ -57,270 +52,63 @@
     <span></span>
   </div>
 
-
   <!-- NAVIGATION -->
   <!-- NAVIGATION -->
 <header class="nav">
-
-  <a
-    class="brand"
-    href="#home"
-    aria-label="Go to home"
-  >
-    <span class="brand-mark">MA</span>
-    <span class="brand-name">Mohammed Aftab Ahamed</span>
+  <a class="brand" href="#home" aria-label="Mohammed Aftab Ahamed — home">
+    <span class="brand-mark">MA</span><span class="brand-name">Mohammed Aftab Ahamed</span>
   </a>
-
-  <nav
-    class="nav-links"
-    aria-label="Primary navigation"
-  >
-    <a href="#home" class="active">Home</a>
+  <nav class="nav-links" aria-label="Primary navigation">
+    <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#certificates">Certificates</a>
     <a href="#projects">Projects</a>
     <a href="#hackathons">Hackathons</a>
     <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
     <a href="#more">Beyond</a>
     <a href="#contact">Contact</a>
   </nav>
-
-  <a
-    class="nav-cta"
-    href="#contact"
-  >
-    Let's Connect
-    <span>↗</span>
-  </a>
-
-
-  <!-- MOBILE MENU -->
-
-  <input
-    type="checkbox"
-    id="mobile-nav-toggle"
-    class="mobile-nav-toggle"
-  />
-
-  <label
-    for="mobile-nav-toggle"
-    class="mobile-menu-button"
-    aria-label="Open navigation"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-
-
-  <div class="mobile-nav-panel">
-
-    <div class="mobile-nav-header">
-      <span>NAVIGATION</span>
-      <span>00 — 06</span>
-    </div>
-
+  <a class="nav-cta" href="#contact">Let's Connect <span aria-hidden="true">↗</span></a>
+  <input type="checkbox" id="mobile-nav-toggle" class="mobile-nav-toggle" tabindex="-1" aria-hidden="true" />
+  <button type="button" class="mobile-menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav-panel">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <div class="mobile-nav-header"><span>NAVIGATION</span><span>00 — 09</span></div>
     <nav aria-label="Mobile navigation">
-
-      <a
-        href="#home"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>00</span>
-        <strong>Home</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#about"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>01</span>
-        <strong>About</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#experience"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>02</span>
-        <strong>Experience</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#education"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>02.5</span>
-        <strong>Education</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#certificates"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>03</span>
-        <strong>Certificates</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#projects"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>03</span>
-        <strong>Projects</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#hackathons"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>03.5</span>
-        <strong>Hackathons</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#skills"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>04</span>
-        <strong>Skills</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#more"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>05</span>
-        <strong>Beyond</strong>
-        <i>↗</i>
-      </a>
-
-      <a
-        href="#contact"
-        onclick="document.getElementById('mobile-nav-toggle').checked=false"
-      >
-        <span>06</span>
-        <strong>Contact</strong>
-        <i>↗</i>
-      </a>
-
+      <a href="#home"><span>00</span><strong>Home</strong><i aria-hidden="true">↗</i></a>
+      <a href="#about"><span>01</span><strong>About</strong><i aria-hidden="true">↗</i></a>
+      <a href="#experience"><span>02</span><strong>Experience</strong><i aria-hidden="true">↗</i></a>
+      <a href="#projects"><span>03</span><strong>Projects</strong><i aria-hidden="true">↗</i></a>
+      <a href="#hackathons"><span>04</span><strong>Hackathons</strong><i aria-hidden="true">↗</i></a>
+      <a href="#skills"><span>05</span><strong>Skills</strong><i aria-hidden="true">↗</i></a>
+      <a href="#education"><span>06</span><strong>Education</strong><i aria-hidden="true">↗</i></a>
+      <a href="#certificates"><span>07</span><strong>Certificates</strong><i aria-hidden="true">↗</i></a>
+      <a href="#more"><span>08</span><strong>Beyond</strong><i aria-hidden="true">↗</i></a>
+      <a href="#contact"><span>09</span><strong>Contact</strong><i aria-hidden="true">↗</i></a>
     </nav>
-
-    <a
-      href="#contact"
-      class="mobile-connect"
-      onclick="document.getElementById('mobile-nav-toggle').checked=false"
-    >
-      <span>LET'S CONNECT</span>
-      <strong>↗</strong>
-    </a>
-
-    <div class="mobile-nav-footer">
-      <span>MOHAMMED AFTAB AHAMED</span>
-      <span>AI / ML ENGINEER</span>
-    </div>
-
+    <a class="mobile-connect" href="#contact"><span>LET'S CONNECT</span><strong>↗</strong></a>
+    <div class="mobile-nav-footer"><span>MOHAMMED AFTAB AHAMED</span><span>AI / ML ENGINEER</span></div>
   </div>
-
 </header>
 
-
   <!-- SECTION RAIL -->
-  <aside
-    class="section-rail"
-    aria-label="Section progress"
-  >
+  <aside class="section-rail" aria-label="Section navigation">
+  <a href="#home" data-section="home" aria-label="Home" title="Home"><span>00</span></a>
+  <a href="#about" data-section="about" aria-label="About" title="About"><span>01</span></a>
+  <a href="#experience" data-section="experience" aria-label="Experience" title="Experience"><span>02</span></a>
+  <a href="#projects" data-section="projects" aria-label="Projects" title="Projects"><span>03</span></a>
+  <a href="#hackathons" data-section="hackathons" aria-label="Hackathons" title="Hackathons"><span>04</span></a>
+  <a href="#skills" data-section="skills" aria-label="Skills" title="Skills"><span>05</span></a>
+  <a href="#education" data-section="education" aria-label="Education" title="Education"><span>06</span></a>
+  <a href="#certificates" data-section="certificates" aria-label="Certificates" title="Certificates"><span>07</span></a>
+  <a href="#more" data-section="more" aria-label="Beyond" title="Beyond"><span>08</span></a>
+  <a href="#contact" data-section="contact" aria-label="Contact" title="Contact"><span>09</span></a>
+</aside>
 
-    <a
-      href="#home"
-      data-section="home"
-      class="active"
-    >
-      <span>00</span>
-    </a>
-
-    <a
-      href="#about"
-      data-section="about"
-    >
-      <span>01</span>
-    </a>
-
-    <a
-      href="#experience"
-      data-section="experience"
-    >
-      <span>02</span>
-    </a>
-
-    <a
-      href="#projects"
-      data-section="projects"
-    >
-      <span>03</span>
-    </a>
-
-    <a
-      href="#certificates"
-      data-section="certificates"
-    >
-      <span>03</span>
-    </a>
-
-    <a
-      href="#education"
-      data-section="education"
-    >
-      <span>02.5</span>
-    </a>
-
-    <a
-      href="#hackathons"
-      data-section="hackathons"
-    >
-      <span>03.5</span>
-    </a>
-
-    <a
-      href="#skills"
-      data-section="skills"
-    >
-      <span>04</span>
-    </a>
-
-    <a
-      href="#more"
-      data-section="more"
-    >
-      <span>05</span>
-    </a>
-
-    <a
-      href="#contact"
-      data-section="contact"
-    >
-      <span>06</span>
-    </a>
-
-  </aside>
-
-
-  <main>
-
-
-    <!-- =====================================================
-     HERO
-====================================================== -->
+  <main id="main-content" tabindex="-1">
 
 <section
   id="home"
@@ -344,31 +132,19 @@
 
     </div>
 
-
     <!-- INTRO -->
 
     <p class="hero-kicker">
-      AI / ML ENGINEER · FULL STACK DEVELOPER
+      AI/ML ENGINEER · GENERATIVE AI · AGENTIC SYSTEMS
     </p>
-
 
     <!-- HEADLINE -->
 
-    <h1>
-      Engineering
-      <br>
-      <span>AI that ships.</span>
-    </h1>
-
+    <h1>Building intelligent systems<br><span>that solve real problems.</span></h1>
 
     <!-- DESCRIPTION -->
 
-    <p class="hero-text">
-      I build intelligent, scalable and production-ready applications
-      across Agentic AI, Hybrid RAG, LLMs, automation and full-stack
-      engineering.
-    </p>
-
+    <p class="hero-text">I build LLM-powered applications with Agentic AI, Hybrid RAG and reliable backends — with hands-on Python automation experience at Nokia.</p>
 
     <!-- ACTIONS -->
 
@@ -384,7 +160,7 @@
 
       <a
         class="button button-ghost"
-        href="./assets/Mohammed-Aftab-Resume.pdf"
+        href="./assets/Mohammed-Aftab-Resume.pdf" download="Mohammed-Aftab-Resume.pdf"
         target="_blank"
         rel="noreferrer"
       >
@@ -393,7 +169,6 @@
       </a>
 
     </div>
-
 
     <!-- SOCIALS -->
 
@@ -457,7 +232,7 @@
   </a>
 
 </div>
-
+  </div><!-- /hero-copy -->
 
   <!-- HERO SIDE -->
 
@@ -498,7 +273,6 @@
 
   </div>
 
-
   <!-- SCROLL -->
 
   <a
@@ -508,7 +282,6 @@
     <span></span>
     Scroll to explore
   </a>
-
 
   <!-- HERO STATS -->
 
@@ -527,7 +300,6 @@
 
     </div>
 
-
     <div class="hero-stat">
 
       <div class="stat-icon">
@@ -540,7 +312,6 @@
       </div>
 
     </div>
-
 
     <div class="hero-stat">
 
@@ -555,7 +326,6 @@
 
     </div>
 
-
     <div class="hero-stat">
 
       <div class="stat-icon">
@@ -563,8 +333,8 @@
       </div>
 
       <div>
-        <strong>15K+</strong>
-        <span>Documents in RAG corpus</span>
+        <strong>169</strong>
+        <span>CyberShield tests</span>
       </div>
 
     </div>
@@ -572,16 +342,6 @@
   </div>
 
 </section>
-
-
-
-    <!-- =====================================================
-         ABOUT
-    ====================================================== -->
-
-    <!-- =====================================================
-     ABOUT
-====================================================== -->
 
 <section
   id="about"
@@ -594,9 +354,7 @@
     <i></i>
   </div>
 
-
   <div class="about-grid">
-
 
     <!-- LEFT -->
 
@@ -613,12 +371,7 @@
         <em>software engineering.</em>
       </p>
 
-      <p class="about-note">
-        My work spans the path from intelligent models to usable
-        engineering systems — combining machine learning, generative AI,
-        retrieval, APIs and automation into practical applications.
-      </p>
-
+      <p class="about-note">I build end-to-end AI applications using LLMs, Agentic AI, Hybrid RAG and LangGraph, supported by FastAPI, React, Python, PostgreSQL and Docker. My work connects NLP, deep learning and machine learning models with usable, deployed full-stack platforms.</p>
 
       <div class="about-focus-list">
 
@@ -638,7 +391,6 @@
 
         </div>
 
-
         <div class="about-focus-item">
 
           <span>02</span>
@@ -654,7 +406,6 @@
           <i>↗</i>
 
         </div>
-
 
         <div class="about-focus-item">
 
@@ -676,7 +427,6 @@
 
     </div>
 
-
     <!-- RIGHT CARD -->
 
     <div class="about-card glass reveal">
@@ -684,7 +434,6 @@
       <div class="about-card-glow"></div>
 
       <div class="about-card-grid"></div>
-
 
       <div class="profile-line">
 
@@ -706,7 +455,6 @@
 
       </div>
 
-
       <div class="about-card-description">
 
         <span class="card-label">
@@ -720,7 +468,6 @@
         </p>
 
       </div>
-
 
       <div class="mini-meta-grid">
 
@@ -736,7 +483,6 @@
 
         </div>
 
-
         <div>
 
           <span>
@@ -749,7 +495,6 @@
 
         </div>
 
-
         <div>
 
           <span>
@@ -761,7 +506,6 @@
           </strong>
 
         </div>
-
 
         <div>
 
@@ -776,7 +520,6 @@
         </div>
 
       </div>
-
 
       <div class="about-card-footer">
 
@@ -796,12 +539,6 @@
 
 </section>
 
-
-
-    <!-- =====================================================
-     EXPERIENCE
-====================================================== -->
-
 <section
   id="experience"
   class="section content-section observe-section"
@@ -812,7 +549,6 @@
     <h2>Experience</h2>
     <i></i>
   </div>
-
 
   <article class="experience-card glass reveal">
 
@@ -826,9 +562,8 @@
     alt="Nokia"
   />
 </div>
-
+        <div><p class="company">NOKIA</p><h3>Student Intern</h3></div>
       </div>
-
 
       <div class="exp-period">
 
@@ -841,7 +576,6 @@
       </div>
 
     </div>
-
 
     <div class="exp-summary">
 
@@ -863,12 +597,11 @@
         </span>
 
         <p>
-          Python Automation · AI / ML · Engineering
+          Student Intern · Python Automation
         </p>
       </div>
 
     </div>
-
 
     <div class="impact-strip">
 
@@ -894,59 +627,43 @@
 
     </div>
 
-
     <div class="exp-details">
 
       <div class="exp-detail">
 
         <span>01</span>
 
-        <p>
-          Developed Python automation workflows that
-          significantly reduced manual validation effort.
-        </p>
+        <p>Developed a Python-based automation tool, reducing documentation validation time by approximately 90% and significantly reducing manual QA effort.</p>
 
       </div>
-
 
       <div class="exp-detail">
 
         <span>02</span>
 
-        <p>
-          Processed 500+ pages through automated
-          document and validation pipelines.
-        </p>
+        <p>Automated validation workflows, processing 500+ pages across hundreds of documents in under 60 seconds.</p>
 
       </div>
-
 
       <div class="exp-detail">
 
         <span>03</span>
 
-        <p>
-          Engineered workflows capable of completing
-          execution in under 60 seconds.
-        </p>
+        <p>Collaborated with 3+ R&amp;D and QA teams using Git in an Agile environment to develop, test and integrate automation features, with regular requirements discussions.</p>
 
       </div>
-
 
       <div class="exp-detail">
 
         <span>04</span>
 
-        <p>
-          Supported engineering workflows used by
-          multiple R&amp;D and QA teams.
-        </p>
+        <p>Improved Python automation for reliable validation across 500+ documentation pages, supporting engineering workflows across multiple teams.</p>
 
       </div>
 
     </div>
 
-
+    <div class="tags experience-stack" aria-label="Nokia technology stack"><span>Python</span><span>Pandas</span><span>NumPy</span><span>OpenCV</span><span>Tesseract OCR</span><span>Pytesseract</span><span>PDFPlumber</span><span>Regex</span><span>OpenPyXL</span><span>XlsxWriter</span></div>
     <div class="exp-footer">
 
       <span>
@@ -963,159 +680,6 @@
 
 </section>
 
-
-    <!-- =====================================================
-     EDUCATION
-====================================================== -->
-
-<section id="education" class="section content-section observe-section">
-
-  <div class="section-heading reveal">
-    <span>02.5</span>
-    <h2>Education</h2>
-    <i></i>
-  </div>
-
-  <div class="education-card glass reveal">
-    <div class="education-icon">
-      <span aria-hidden="true">&#127891;</span>
-    </div>
-    <div class="education-body">
-      <h3>New Horizon College of Engineering</h3>
-      <p>Bachelor of Engineering (B.E.) — Artificial Intelligence and Machine Learning</p>
-      <div class="education-meta">
-        <span>Expected Graduation: 2026</span>
-        <span>CGPA: 9.43 / 10</span>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-
-    <!-- =====================================================
-     CERTIFICATIONS
-====================================================== -->
-
-<section id="certificates" class="section content-section observe-section">
-
-  <div class="section-heading reveal">
-    <span>03</span>
-    <h2>Certifications &amp; Learning</h2>
-    <i></i>
-  </div>
-
-  <p class="section-intro reveal">
-    Continuously strengthening my skills across AI development, networking, and data.
-  </p>
-
-  <div class="certificates-grid">
-
-    <!-- CERTIFICATE 1 -->
-    <article class="certificate-card glass reveal">
-      <div class="certificate-preview">
-        <img
-          src="assets/cert-claude-code-101.png"
-          alt="Claude Code 101 certificate preview"
-          loading="lazy"
-        />
-      </div>
-      <div class="certificate-body">
-        <h3>Claude Code 101</h3>
-        <span class="certificate-issuer">Claude Academy</span>
-        <span class="certificate-category">AI Development</span>
-        <p class="certificate-desc">
-          Introduction to Claude Code capabilities, agent patterns, and best practices for AI-assisted development.
-        </p>
-        <div class="certificate-actions">
-          <a
-            class="button button-ghost"
-            href="https://academy.claude.com/verify/51b936355dfd7fb33c75b5703a09fcc3"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Verify Claude Code 101 certificate"
-          >
-            Verify Certificate <span>↗</span>
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <!-- CERTIFICATE 2 -->
-    <article class="certificate-card glass reveal">
-      <div class="certificate-preview">
-        <img
-          src="assets/cert-computer-networks-placeholder.svg"
-          alt="Computer Networks and Internet Protocols certificate placeholder — real image or PDF needed"
-          loading="lazy"
-        />
-      </div>
-      <div class="certificate-body">
-        <h3>Computer Networks and Internet Protocols</h3>
-        <span class="certificate-issuer">NPTEL</span>
-        <span class="certificate-category">Computer Networks</span>
-        <p class="certificate-desc">
-          Core networking concepts, protocol stacks, TCP/IP, routing, and internet architecture — foundational for distributed AI systems.
-        </p>
-        <div class="certificate-actions">
-          <a
-            class="button button-ghost"
-            href="https://nptel.ac.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit NPTEL official website"
-          >
-            Visit Issuer <span>↗</span>
-          </a>
-          <p class="certificate-note">
-            Individual verification URL not available — certificate image or PDF needed.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- CERTIFICATE 3 -->
-    <article class="certificate-card glass reveal">
-      <div class="certificate-preview">
-        <img
-          src="assets/cert-data-fundamentals-placeholder.svg"
-          alt="Data Fundamentals certificate placeholder — real image or PDF needed"
-          loading="lazy"
-        />
-      </div>
-      <div class="certificate-body">
-        <h3>Data Fundamentals</h3>
-        <span class="certificate-issuer">IBM SkillsBuild</span>
-        <span class="certificate-category">Data</span>
-        <p class="certificate-desc">
-          Essential data literacy, analysis principles, and foundational skills for working with structured information in AI pipelines.
-        </p>
-        <div class="certificate-actions">
-          <a
-            class="button button-ghost"
-            href="https://skillsbuild.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit IBM SkillsBuild official website"
-          >
-            Visit Issuer <span>↗</span>
-          </a>
-          <p class="certificate-note">
-            Individual verification URL not available — certificate image or PDF needed.
-          </p>
-        </div>
-      </div>
-    </article>
-
-  </div>
-
-</section>
-
-
-    <!-- =====================================================
-     PROJECTS
-====================================================== -->
-
 <section
   id="projects"
   class="section content-section observe-section"
@@ -1123,365 +687,46 @@
 
   <div class="section-heading reveal">
     <span>03</span>
-    <h2>Selected projects</h2>
+    <h2>Featured projects</h2>
     <i></i>
   </div>
 
-
-  <p class="section-intro reveal project-intro">
-    AI systems and full-stack applications built around
-    real engineering problems — from cybersecurity and
-    retrieval to intelligent job automation and computer vision.
-  </p>
-
+  <p class="section-intro reveal project-intro">Two recent builds across security intelligence and voice AI — with architecture, evaluation and source code to explore. Earlier work lives in the full project archive.</p>
 
   <div class="projects-grid">
-
-
-    <!-- PROJECT 01 -->
-
-    <article class="project-card project-feature glass reveal">
-
-      <div class="project-top">
-
-        <span class="project-number">
-          01
-        </span>
-
-        <span class="project-type">
-          AGENTIC AI · CYBERSECURITY
-        </span>
-
-        <a
-          class="project-live-link"
-          href="https://cybershieldai-security.vercel.app/login"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Open CyberShield AI live application"
-        >
-          Live demo <span aria-hidden="true">↗</span>
-        </a>
-
-        <a
-          class="project-link"
-          href="https://github.com/MoAftab-01/CyberShield-AI"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Open CyberShield AI GitHub repository"
-        >
-          ↗
-        </a>
-
-      </div>
-
-
-      <div class="project-body">
-
-        <div class="project-heading">
-
-          <div class="project-copy">
-
-            <h3>
-              CyberShield AI
-            </h3>
-
-            <p>
-              Full-stack AI-powered cyber threat intelligence platform combining Agentic AI, Hybrid RAG, machine learning, and production APIs.
-            </p>
-
-            <div class="project-architecture" role="img" aria-label="CyberShield AI architecture: threat intelligence input, BM25 + FAISS retrieval, RRF + MMR ranking">
-              <div>
-                <small>INPUT</small>
-                <strong>Threat intelligence</strong>
-              </div>
-              <span aria-hidden="true">→</span>
-              <div>
-                <small>RETRIEVAL</small>
-                <strong>BM25 + FAISS</strong>
-              </div>
-              <span aria-hidden="true">→</span>
-              <div>
-                <small>RANKING</small>
-                <strong>RRF + MMR</strong>
-              </div>
-            </div>
-
-            <div class="project-story">
-              <div>
-                <small>PROBLEM</small>
-                <p>Threat intelligence signals need structured retrieval, ranking, and analysis.</p>
-              </div>
-              <div>
-                <small>BUILD</small>
-                <p>FastAPI, React, TypeScript, PostgreSQL (Neon), Docker, JWT auth; Hybrid RAG with BM25 + FAISS, RRF, and MMR.</p>
-              </div>
-              <div>
-                <small>OUTCOME</small>
-                <p>Production platform with 30+ REST APIs; 85% Recall@5, 0.6287 MRR, 87.5% accuracy, 100% precision across 169 tests.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="tags project-tech-tags">
-
-  <span class="tech-tag">
-    Python
-  </span>
-
-  <span class="tech-tag">
-    FastAPI
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/react"
-      alt=""
-    />
-    React
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/postgresql"
-      alt=""
-    />
-    PostgreSQL
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/neondb"
-      alt=""
-    />
-    Neon
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/docker"
-      alt=""
-    />
-    Docker
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/jest"
-      alt=""
-    />
-    JWT
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/faiss"
-      alt=""
-    />
-    FAISS
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/huggingface"
-      alt=""
-    />
-    Hybrid RAG
-  </span>
-
-  <span class="tech-tag">
-    TypeScript
-  </span>
-
-  <span class="tech-tag">
-    BM25
-  </span>
-
+<article class="project-card project-feature glass reveal">
+  <div class="project-top"><span class="project-number">01</span><span class="project-type">AGENTIC AI · HYBRID RAG · CYBERSECURITY</span><a class="project-link" href="https://github.com/MoAftab-01/CyberShield-AI" target="_blank" rel="noopener noreferrer" aria-label="CyberShield AI repository">↗</a></div>
+  <div class="project-body">
+    <p class="project-subtitle">AI-Powered Cyber Threat Intelligence Platform</p><h3>CyberShield AI</h3>
+    <p>A full-stack security platform with 30+ REST APIs, JWT authentication and Hybrid RAG for retrieving and analyzing threat intelligence.</p>
+    <div class="project-architecture" aria-label="Retrieval pipeline"><div><small>INPUT</small><strong>Threat intelligence</strong></div><span aria-hidden="true">→</span><div><small>RETRIEVAL</small><strong>BM25 + FAISS</strong></div><span aria-hidden="true">→</span><div><small>RANKING</small><strong>RRF + MMR</strong></div></div>
+    <div class="tags project-tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Neon</span><span class="tech-tag">Docker</span><span class="tech-tag">JWT</span><span class="tech-tag">BM25</span><span class="tech-tag">FAISS</span><span class="tech-tag">Hybrid RAG</span></div>
+  </div>
+  <div class="project-evaluations">
+    <div class="evaluation-group"><p class="metric-label">Retrieval evaluation</p><dl class="metric-grid"><div><dt>Recall@5</dt><dd>≈85%</dd></div><div><dt>MRR</dt><dd>0.6287</dd></div></dl></div>
+    <div class="evaluation-group"><p class="metric-label">URL risk triage evaluation</p><dl class="metric-grid"><div><dt>Accuracy</dt><dd>87.5%</dd></div><div><dt>Precision</dt><dd>100%</dd></div></dl></div>
+    <p class="evaluation-note">Backed by 169 tests. Retrieval and URL risk triage are separate evaluations.</p>
+  </div>
+  <details class="project-details"><summary>Engineering details</summary><p>Combines Agentic AI, machine learning and production APIs. FastAPI serves a React and TypeScript interface, with PostgreSQL (Neon), Docker and JWT authentication. Reciprocal Rank Fusion (RRF) combines BM25 and FAISS retrieval; Maximal Marginal Relevance (MMR) diversifies ranked results.</p></details>
+  <div class="project-footer"><div class="project-actions"><a class="button button-ghost" href="https://github.com/MoAftab-01/CyberShield-AI" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="https://cybershieldai-security.vercel.app/login" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a></div><span>30+ REST APIs · 169 tests</span></div>
+</article>
+<article class="project-card project-feature glass reveal">
+  <div class="project-top"><span class="project-number">02</span><span class="project-type">VOICE AI · HYBRID RAG · GENERATIVE AI</span><a class="project-link" href="https://github.com/MoAftab-01/better-call-kanoon" target="_blank" rel="noopener noreferrer" aria-label="Better Call Kanoon repository">↗</a></div>
+  <div class="project-body">
+    <p class="project-subtitle">Multilingual Voice AI Legal Assistant</p><h3>Better Call Kanoon</h3>
+    <p>A multilingual legal information assistant using FastAPI, Groq and Hybrid RAG, with cited answers, English/Hindi voice interaction and legal guardrails.</p>
+    <div class="project-architecture" aria-label="Legal assistance pipeline"><div><small>INPUT</small><strong>English / Hindi</strong></div><span aria-hidden="true">→</span><div><small>RETRIEVAL</small><strong>BM25 + FAISS</strong></div><span aria-hidden="true">→</span><div><small>RESPONSE</small><strong>Voice + citations</strong></div></div>
+    <div class="tags project-tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Groq</span><span class="tech-tag">FAISS</span><span class="tech-tag">BM25</span><span class="tech-tag">LLMs</span><span class="tech-tag">Hybrid RAG</span><span class="tech-tag">Voice AI</span><span class="tech-tag">Generative AI</span></div>
+  </div>
+  <div class="project-evaluations">
+    <div class="evaluation-group"><p class="metric-label">Retrieval evaluation</p><dl class="metric-grid"><div><dt>Retrieval accuracy</dt><dd>90%+</dd></div><div><dt>Evaluation queries</dt><dd>30+</dd></div></dl></div>
+    <div class="evaluation-group"><p class="metric-label">Indexed legal corpus</p><dl class="metric-grid"><div><dt>Legal chunks</dt><dd>1.8K+</dd></div><div><dt>Indian laws</dt><dd>7+</dd></div></dl></div>
+    <p class="evaluation-note">Grounded retrieval with legal citations and guardrails for unsupported answers.</p>
+  </div>
+  <details class="project-details"><summary>Engineering details &amp; roadmap</summary><p>FAISS and BM25 combine semantic and lexical retrieval over Indian legal information. English and Hindi voice interaction is implemented. Reducing unsupported responses by 80% is a target, not a measured result. Real-time, one-call AI legal assistance with telephony integration is planned.</p></details>
+  <div class="project-footer"><div class="project-actions"><a class="button button-ghost" href="https://github.com/MoAftab-01/better-call-kanoon" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div><span>English + Hindi · Telephony planned</span></div>
+</article>
 </div>
-
-      </div>
-
-
-      <div class="project-metrics">
-
-        <div>
-          <strong>85%</strong>
-          <span>Recall@5</span>
-        </div>
-
-        <div>
-          <strong>0.6287</strong>
-          <span>MRR</span>
-        </div>
-
-        <div>
-          <strong>87.5%</strong>
-          <span>URL risk triage accuracy</span>
-        </div>
-
-        <div>
-          <strong>100%</strong>
-          <span>URL risk triage precision</span>
-        </div>
-
-        <div>
-          <strong>169</strong>
-          <span>tests</span>
-        </div>
-
-      </div>
-
-
-      <div class="project-footer">
-
-        <span>
-          30+ REST APIs · Hybrid RAG · 169 tests
-        </span>
-
-      </div>
-
-    </article>
-
-
-    <!-- PROJECT 02 -->
-
-    <article class="project-card project-feature glass reveal">
-
-      <div class="project-top">
-
-        <span class="project-number">
-          02
-        </span>
-
-        <span class="project-type">
-          VOICE AI · HYBRID RAG · GENERATIVE AI
-        </span>
-
-        <a
-          class="project-link"
-          href="https://github.com/MoAftab-01/better-call-kanoon"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Open Better Call Kanoon GitHub repository"
-        >
-          ↗
-        </a>
-
-      </div>
-
-
-      <div class="project-body">
-
-        <h3>
-          Better Call Kanoon
-        </h3>
-
-        <p>
-          Voice AI Legal Information Assistant — multilingual AI legal assistant built with FastAPI, Groq LLMs, FAISS, BM25, and Hybrid RAG indexing 1.8K+ legal chunks across 7+ Indian laws. Supports English and Hindi voice interaction with legal guardrails. Future roadmap: real-time, one-call legal assistance with telephony integration.
-        </p>
-
-
-        <div class="tags project-tech-tags">
-
-  <span class="tech-tag">
-    Python
-  </span>
-
-  <span class="tech-tag">
-    FastAPI
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/groq"
-      alt=""
-    />
-    Groq
-  </span>
-
-  <span class="tech-tag">
-    LLMs
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/faiss"
-      alt=""
-    />
-    FAISS
-  </span>
-
-  <span class="tech-tag">
-    BM25
-  </span>
-
-  <span class="tech-tag tech-tag-logo">
-    <img
-      src="https://cdn.simpleicons.org/langgraph"
-      alt=""
-    />
-    Hybrid RAG
-  </span>
-
-  <span class="tech-tag">
-    Voice AI
-  </span>
-
-</div>
-
-      </div>
-
-
-      <div class="project-metrics">
-
-        <div>
-          <strong>90%+</strong>
-          <span>retrieval accuracy</span>
-        </div>
-
-        <div>
-          <strong>1.8K+</strong>
-          <span>legal chunks indexed</span>
-        </div>
-
-        <div>
-          <strong>7+</strong>
-          <span>Indian laws covered</span>
-        </div>
-
-        <div>
-          <strong>30+</strong>
-          <span>verified queries</span>
-        </div>
-
-      </div>
-
-
-      <div class="project-footer">
-
-        <span>
-          English + Hindi · Voice interaction · Legal guardrails · Telephony planned
-        </span>
-
-        <a
-          class="button button-ghost"
-          href="https://github.com/MoAftab-01/better-call-kanoon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Repository <span>↗</span>
-        </a>
-
-      </div>
-
-    </article>
-
-
-    </div>
-
 
   <div class="projects-cta reveal">
 
@@ -1498,16 +743,10 @@
 
 </section>
 
-
-
-    <!-- =====================================================
-     HACKATHONS
-====================================================== -->
-
 <section id="hackathons" class="section content-section observe-section">
 
   <div class="section-heading reveal">
-    <span>03.5</span>
+    <span>04</span>
     <h2>Hackathons &amp; Innovation</h2>
     <i></i>
   </div>
@@ -1517,112 +756,29 @@
   </p>
 
   <div class="hackathons-grid">
-
-    <article class="hackathon-card glass reveal">
-
-      <div class="hackathon-top">
-        <span class="hackathon-number">01</span>
-        <span class="hackathon-type">AI AGENTS · OCR · FINANCIAL INTELLIGENCE</span>
-        <a
-          class="hackathon-link"
-          href="https://github.com/MoAftab-01/hackerrank-buy-or-wait"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View Buy or Wait on GitHub"
-        >
-          ↗
-        </a>
-      </div>
-
-      <div class="hackathon-body">
-        <h3>Buy or Wait — AI Financial Decision Agent</h3>
-        <p>
-          Built a deterministic AI-inspired financial decision agent for a HackerRank Orchestrate hackathon. It analyzes financial context, recurring and pending transactions, payment options, and supporting media to recommend actionable purchase decisions. The system uses OCR-based evidence extraction and validation to improve traceability and avoid relying on hardcoded answers.
-        </p>
-        <div class="tags hackathon-tags">
-          <span>AI Agents</span>
-          <span>OCR</span>
-          <span>Financial Intelligence</span>
-          <span>Python</span>
-        </div>
-      </div>
-
-      <div class="hackathon-footer">
-        <a
-          class="button button-ghost"
-          href="https://github.com/MoAftab-01/hackerrank-buy-or-wait"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View on GitHub <span>↗</span>
-        </a>
-      </div>
-
-    </article>
-
-
-    <article class="hackathon-card glass reveal">
-
-      <div class="hackathon-top">
-        <span class="hackathon-number">02</span>
-        <span class="hackathon-type">AI · COMPUTER VISION · REAL-WORLD EXPLORATION</span>
-        <a
-          class="hackathon-link"
-          href="https://github.com/MoAftab-01/SideQuest-AI"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View SideQuest AI on GitHub"
-        >
-          ↗
-        </a>
-      </div>
-
-      <div class="hackathon-body">
-        <h3>SideQuest AI — Turn Your City Into a Game</h3>
-        <p>
-          An AI-powered exploration concept that turns real-world discoveries into personalized city quests. It combines AI-generated missions with a vision-model-based approach to verifying discoveries, encouraging users to explore their surroundings through interactive, gamified experiences.
-        </p>
-        <div class="tags hackathon-tags">
-          <span>Computer Vision</span>
-          <span>AI</span>
-          <span>Gamification</span>
-          <span>Real-World</span>
-        </div>
-      </div>
-
-      <div class="hackathon-footer">
-        <a
-          class="button button-ghost"
-          href="https://github.com/MoAftab-01/SideQuest-AI"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View on GitHub <span>↗</span>
-        </a>
-      </div>
-
-    </article>
-
-  </div>
-
+<article class="hackathon-card glass reveal">
+  <div class="hackathon-top"><span class="hackathon-number">01</span><span class="hackathon-type">HACKTOBERFEST 2026 · OPEN-SOURCE AI CHALLENGE</span><a class="hackathon-link" href="https://github.com/MoAftab-01/SideQuest-AI" target="_blank" rel="noopener noreferrer" aria-label="SideQuest AI — Turn Your City Into a Game repository">↗</a></div>
+  <div class="hackathon-body"><h3>SideQuest AI — Turn Your City Into a Game</h3><p>A mobile-first outdoor exploration platform that turns real-world activities into gamified missions, with AI-generated quests, FastAPI and open-weight LLM inference.</p><div class="evaluation-group"><p class="metric-label">Build highlights</p><dl class="metric-grid"><div><dt>Mission generation</dt><dd>AI quests</dd></div><div><dt>Progression</dt><dd>XP</dd></div></dl></div><details class="project-details"><summary>Implementation details</summary><p>Designed a mission-generation pipeline with fallback handling, XP progression and a responsive UI using the Groq API and Python. Personalized city quests encourage real-world discoveries. The existing vision-model verification approach is retained; real-photo verification accuracy is not measured.</p><p>Earlier repository snapshot: OpenRouter provider integration and deterministic fallbacks are documented; live model inference was configured but not demonstrated. The latest resume describes a Groq-based pipeline. Vision verification is implemented as an approach, not a proven accuracy claim.</p></details><div class="tags project-tech-tags"><span class="tech-tag">FastAPI</span><span class="tech-tag">Python</span><span class="tech-tag">Groq</span><span class="tech-tag">Open-weight LLMs</span><span class="tech-tag">Computer Vision</span><span class="tech-tag">Gamification</span><span class="tech-tag">Real-World</span></div></div>
+  <div class="hackathon-footer"><a class="button button-ghost" href="https://github.com/MoAftab-01/SideQuest-AI" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="https://sidequest-ai-42m4.onrender.com" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="hackathon-card glass reveal">
+  <div class="hackathon-top"><span class="hackathon-number">02</span><span class="hackathon-type">HACKERRANK ORCHESTRATE PROJECT</span><a class="hackathon-link" href="https://github.com/MoAftab-01/hackerrank-buy-or-wait" target="_blank" rel="noopener noreferrer" aria-label="Buy or Wait — AI Financial Decision Agent repository">↗</a></div>
+  <div class="hackathon-body"><h3>Buy or Wait — AI Financial Decision Agent</h3><p>A deterministic AI financial decision agent processing 250+ purchase requests and 25K+ financial events. Uses 90-day cash-flow forecasting and constraint-based reasoning to recommend safe payment strategies.</p><div class="evaluation-group"><p class="metric-label">Build highlights</p><dl class="metric-grid"><div><dt>Purchase requests</dt><dd>250+</dd></div><div><dt>Financial events</dt><dd>25K+</dd></div></dl></div><details class="project-details"><summary>Implementation details</summary><p>Analyzes financial context, recurring and pending transactions, payment options and supporting media. A multimodal OCR and validation pipeline handles 16+ financial documents; transaction reconciliation, payment-plan validation and automated evaluation produce 250+ compliant decisions. Evidence extraction improves traceability without hardcoded answers.</p></details><div class="tags project-tech-tags"><span class="tech-tag">AI Agents</span><span class="tech-tag">OCR</span><span class="tech-tag">Financial Intelligence</span><span class="tech-tag">Python</span></div></div>
+  <div class="hackathon-footer"><a class="button button-ghost" href="https://github.com/MoAftab-01/hackerrank-buy-or-wait" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+</article>
+</div>
 </section>
-
-
-
-    <!-- =====================================================
-     SKILLS
-====================================================== -->
 
 <section id="skills" class="section content-section observe-section">
 
   <div class="section-heading reveal">
-    <span>04</span>
-    <h2>Skills</h2>
+    <span>05</span>
+    <h2>Technical skills</h2>
     <i></i>
   </div>
 
   <!-- SKILL MARQUEE -->
-  <div class="skills-marquee reveal">
+  <div class="skills-marquee reveal" aria-hidden="true">
     <div class="skills-marquee-track">
 
       <span>PYTHON</span>
@@ -1667,7 +823,6 @@
     </div>
   </div>
 
-
   <!-- SKILLS GRID -->
   <div class="skills-grid">
 
@@ -1692,10 +847,14 @@
       <div class="skill-tags">
         <span>Python</span>
         <span>SQL</span>
+        <span>JSON</span>
+        <span>C++</span>
+        <span>C#</span>
+        <span>Node.js</span>
+        <span>OpenGL</span>
       </div>
 
     </article>
-
 
     <!-- AI / ML -->
     <article class="skill-card glass reveal">
@@ -1724,10 +883,14 @@
         <span>NLP</span>
         <span>Computer Vision</span>
         <span>XGBoost</span>
+        <span>Regression</span>
+        <span>Deep Learning</span>
+        <span>Neural Networks</span>
+        <span>OpenCV</span>
+        <span>DeepFace</span>
       </div>
 
     </article>
-
 
     <!-- GENERATIVE AI -->
     <article class="skill-card glass reveal">
@@ -1754,10 +917,14 @@
         <span>LangChain</span>
         <span>Prompt Engineering</span>
         <span>RAG</span>
+        <span>Hybrid RAG</span>
+        <span>OpenAI API</span>
+        <span>GPT-3</span>
+        <span>FAISS</span>
+        <span>BM25</span>
       </div>
 
     </article>
-
 
     <!-- BACKEND & CLOUD -->
     <article class="skill-card glass reveal">
@@ -1785,10 +952,10 @@
         <span>Kubernetes</span>
         <span>AWS</span>
         <span>Git / GitHub</span>
+        <span>API Integrations</span>
       </div>
 
     </article>
-
 
     <!-- FRONTEND -->
     <article class="skill-card glass reveal">
@@ -1811,58 +978,8 @@
       <div class="skill-tags">
         <span>React</span>
         <span>Tailwind CSS</span>
-      </div>
-
-    </article>
-
-
-    <!-- CERTIFICATIONS -->
-    <article class="skill-card skill-card-certifications glass reveal">
-
-      <div class="skill-card-top">
-        <span class="skill-number">06</span>
-        <span class="skill-icon">✓</span>
-      </div>
-
-      <div class="skill-card-heading">
-        <span>LEARNING</span>
-        <h3>Certifications</h3>
-      </div>
-
-      <p>
-        Continuous learning across software engineering,
-        data and machine learning.
-      </p>
-
-      <div class="certification-list">
-
-        <div class="certification-item">
-          <span>01</span>
-          <div>
-            <strong>NPTEL</strong>
-            <small>Computer Networks and Internet Protocols</small>
-          </div>
-          <i>↗</i>
-        </div>
-
-        <div class="certification-item">
-          <span>02</span>
-          <div>
-            <strong>IBM SkillsBuild</strong>
-            <small>Data Fundamentals</small>
-          </div>
-          <i>↗</i>
-        </div>
-
-        <div class="certification-item">
-          <span>03</span>
-          <div>
-            <strong>MLOps Workshop</strong>
-            <small>Kaushalya Technical Training</small>
-          </div>
-          <i>↗</i>
-        </div>
-
+        <span>Debugging</span>
+        <span>Technical Communication</span>
       </div>
 
     </article>
@@ -1871,16 +988,150 @@
 
 </section>
 
+<section id="education" class="section content-section observe-section">
 
+  <div class="section-heading reveal">
+    <span>06</span>
+    <h2>Education</h2>
+    <i></i>
+  </div>
 
-    <!-- =====================================================
-     BEYOND ENGINEERING
-====================================================== -->
+  <div class="education-card glass reveal">
+    <div class="education-icon">
+      <span aria-hidden="true">&#127891;</span>
+    </div>
+    <div class="education-body">
+      <h3>New Horizon College of Engineering</h3>
+      <p>Bachelor of Engineering (B.E.) — Artificial Intelligence and Machine Learning</p>
+      <div class="education-meta">
+        <span>Graduation: 2026</span>
+        <span>CGPA: 9.43 / 10</span><span>Bengaluru, Karnataka</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="certificates" class="section content-section observe-section">
+
+  <div class="section-heading reveal">
+    <span>07</span>
+    <h2>Certifications &amp; Learning</h2>
+    <i></i>
+  </div>
+
+  <p class="section-intro reveal">
+    Continuously strengthening my skills across AI development, networking, and data.
+  </p>
+
+  <div class="certificates-grid">
+
+    <!-- CERTIFICATE 1 -->
+    <article class="certificate-card glass reveal">
+      <a class="certificate-preview" href="assets/cert-claude-code-101.png" target="_blank" rel="noopener noreferrer" aria-label="Open Claude Code 101 certificate preview">
+        <img
+          src="assets/cert-claude-code-101.png"
+          alt="Claude Code 101 certificate preview"
+          loading="lazy"
+        />
+      </a>
+      <div class="certificate-body">
+        <h3>Claude Code 101</h3>
+        <span class="certificate-issuer">Claude Academy</span>
+        <span class="certificate-category">AI Development</span>
+        <p class="certificate-desc">
+          Introduction to Claude Code capabilities, agent patterns, and best practices for AI-assisted development.
+        </p>
+        <div class="certificate-actions">
+          <a
+            class="button button-ghost"
+            href="https://academy.claude.com/verify/51b936355dfd7fb33c75b5703a09fcc3"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Verify Claude Code 101 certificate"
+          >
+            Verify Certificate <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+<article class="certificate-card glass reveal"><div class="certificate-preview certificate-placeholder"><span aria-hidden="true">✦</span><small>Credential preview not supplied</small></div><div class="certificate-body"><h3>5-Star in Python</h3><span class="certificate-issuer">HackerRank</span><span class="certificate-category">Python</span><p class="certificate-desc">5-star Python achievement on HackerRank.</p><div class="certificate-actions"><a class="button button-ghost" href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">Visit Issuer <span aria-hidden="true">↗</span></a><p class="certificate-note">Personal verification link not yet supplied.</p></div></div></article>
+<article class="certificate-card glass reveal"><div class="certificate-preview certificate-placeholder"><span aria-hidden="true">✦</span><small>Credential preview not supplied</small></div><div class="certificate-body"><h3>AI Skills Passport</h3><span class="certificate-issuer">Microsoft and EY</span><span class="certificate-category">AI Learning</span><p class="certificate-desc">AI Skills Passport learning program.</p><div class="certificate-actions"><a class="button button-ghost" href="https://www.ey.com/en_gl/ai-skills-passport" target="_blank" rel="noopener noreferrer">Visit Issuer <span aria-hidden="true">↗</span></a><p class="certificate-note">Personal verification link not yet supplied.</p></div></div></article>
+    <!-- CERTIFICATE 2 -->
+    <article class="certificate-card glass reveal">
+      <div class="certificate-preview">
+        <img
+          src="assets/cert-computer-networks-placeholder.svg"
+          alt="Computer Networks and Internet Protocols certificate placeholder — real image or PDF needed"
+          loading="lazy"
+        />
+      </div>
+      <div class="certificate-body">
+        <h3>Computer Networks and Internet Protocols</h3>
+        <span class="certificate-issuer">NPTEL</span>
+        <span class="certificate-category">Computer Networks</span>
+        <p class="certificate-desc">
+          Core networking concepts, protocol stacks, TCP/IP, routing, and internet architecture — foundational for distributed AI systems.
+        </p>
+        <div class="certificate-actions">
+          <a
+            class="button button-ghost"
+            href="https://nptel.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit NPTEL official website"
+          >
+            Visit Issuer <span>↗</span>
+          </a>
+          <p class="certificate-note">
+            Personal credential preview and verification link not yet supplied.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CERTIFICATE 3 -->
+    <article class="certificate-card glass reveal">
+      <div class="certificate-preview">
+        <img
+          src="assets/cert-data-fundamentals-placeholder.svg"
+          alt="Data Fundamentals certificate placeholder — real image or PDF needed"
+          loading="lazy"
+        />
+      </div>
+      <div class="certificate-body">
+        <h3>Data Fundamentals</h3>
+        <span class="certificate-issuer">IBM SkillsBuild</span>
+        <span class="certificate-category">Data</span>
+        <p class="certificate-desc">
+          Essential data literacy, analysis principles, and foundational skills for working with structured information in AI pipelines.
+        </p>
+        <div class="certificate-actions">
+          <a
+            class="button button-ghost"
+            href="https://skillsbuild.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit IBM SkillsBuild official website"
+          >
+            Visit Issuer <span>↗</span>
+          </a>
+          <p class="certificate-note">
+            Personal credential preview and verification link not yet supplied.
+          </p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <div class="learning-note glass reveal"><span class="card-label">ADDITIONAL LEARNING</span><h3>MLOps Workshop</h3><p>Kaushalya Technical Training · Continuous learning across software engineering, data and machine learning.</p></div>
+</section>
 
 <section id="more" class="section content-section beyond-section observe-section">
 
   <div class="section-heading reveal">
-    <span>05</span>
+    <span>08</span>
     <h2>Beyond engineering</h2>
     <i></i>
   </div>
@@ -1904,9 +1155,7 @@
 
   </div>
 
-
   <div class="beyond-grid">
-
 
     <!-- RUBIK'S CUBE -->
     <article class="beyond-card beyond-featured glass reveal">
@@ -1948,7 +1197,6 @@
 
     </article>
 
-
     <!-- WRESTLING -->
     <article class="beyond-card glass reveal">
 
@@ -1981,7 +1229,6 @@
 
     </article>
 
-
     <!-- POWERLIFTING -->
     <article class="beyond-card glass reveal">
 
@@ -2013,7 +1260,6 @@
       </div>
 
     </article>
-
 
     <!-- RASHTRAPATI PURASKAR -->
     <article class="beyond-card beyond-wide glass reveal">
@@ -2049,7 +1295,6 @@
 
   </div>
 
-
   <div class="beyond-bottom-line reveal">
     <span>BEYOND THE SCREEN</span>
 
@@ -2062,20 +1307,10 @@
 
 </section>
 
-
-
-    <!-- =====================================================
-         CONTACT
-    ====================================================== -->
-
-    <!-- =====================================================
-     CONTACT / HIRING
-====================================================== -->
-
 <section id="contact" class="section contact-section observe-section">
 
   <div class="section-heading reveal">
-    <span>06</span>
+    <span>09</span>
     <h2>Let's connect</h2>
     <i></i>
   </div>
@@ -2130,7 +1365,6 @@
 
     </div>
 
-
     <!-- RIGHT -->
     <div class="contact-card glass reveal">
 
@@ -2140,7 +1374,6 @@
         <span class="card-label">CONTACT DETAILS</span>
         <span class="contact-signal">● ONLINE</span>
       </div>
-
 
       <div class="contact-details">
 
@@ -2158,7 +1391,6 @@
           <span class="contact-arrow">↗</span>
         </a>
 
-
         <a
           href="tel:+917483430911"
           class="contact-detail"
@@ -2172,7 +1404,6 @@
 
           <span class="contact-arrow">↗</span>
         </a>
-
 
         <a
           href="https://www.linkedin.com/in/mo-aftab/"
@@ -2189,7 +1420,6 @@
 
           <span class="contact-arrow">↗</span>
         </a>
-
 
         <a
   href="https://github.com/MoAftab-01"
@@ -2233,7 +1463,6 @@
 </a>
       </div>
 
-
       <div class="contact-card-footer">
 
         <span>AI / ML ENGINEER</span>
@@ -2249,7 +1478,6 @@
     </div>
 
   </div>
-
 
   <!-- FOOTER -->
   <footer class="portfolio-footer reveal">
@@ -2279,8 +1507,8 @@
   </footer>
 
 </section>
-  </main>
 
+  </main>
 
   <script src="script.js"></script>
 

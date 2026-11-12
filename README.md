@@ -1,17 +1,30 @@
 # Mohammed Aftab Ahamed — Portfolio Draft
 
-Dark, single-page, responsive portfolio built with plain HTML/CSS/JS so it is easy to edit and deploy for free.
+Responsive AI/ML engineering portfolio built with plain HTML, CSS and JavaScript. The homepage prioritizes the latest resume; `projects.html` preserves the wider project archive. The Emerald AI glass theme, profile image and original visual effects are retained. No build step or dependencies are required.
 
 ## Run locally
 
-Open `index.html` directly in a browser, or use VS Code Live Server.
+Open `index.html` directly in a browser, use VS Code Live Server, or run:
+
+```sh
+python -m http.server 4173 --bind 127.0.0.1
+```
+
+Then visit `http://127.0.0.1:4173/`.
 
 ## Edit
 
-- Main content: `index.html`
-- Design, layout, colors: `styles.css`
-- Scroll/reveal behavior: `script.js`
+- Homepage and featured projects: `index.html`
+- Additional projects and historical implementation notes: `projects.html`
+- Original design and effects: `styles.css`
+- Shared emerald palette and dark green glass colors: the single `:root` block in `styles.css`; `--accent` is emerald and `--lime` is the highlight color.
+- Shared layout, reading scale and responsive refinements: `polish.css` (loaded last)
+- Navigation, scroll progress, reveal and pointer effects: `script.js`
 - Profile background: `assets/profile-bg.png`
+- Resume download: `assets/Mohammed-Aftab-Resume.pdf`
+- Content preservation, verification results and outstanding credentials: `UPGRADE-NOTES.md`
+
+Keep the navigation links in both HTML files aligned when adding sections. Certificate issuer links are labeled separately from personal verification links. Preserve the distinction between retrieval evaluation and URL risk triage metrics.
 
 ## Deploy free with GitHub Pages
 
@@ -25,4 +38,4 @@ Open `index.html` directly in a browser, or use VS Code Live Server.
 
 ## Before putting it on your resume
 
-Replace the GitHub/LinkedIn links with your exact profile URLs if needed, and verify the contact details. The portfolio content in this draft is based on the supplied August resume.
+The portfolio uses the local resume PDF and the supplied upgrade brief as its content sources. Personal credential previews and verification links are still needed for HackerRank, Microsoft/EY, NPTEL and IBM SkillsBuild. Existing placeholder artwork is clearly labeled. See `UPGRADE-NOTES.md` for the remaining source differences and verification limits.

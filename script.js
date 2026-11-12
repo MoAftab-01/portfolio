@@ -1,147 +1,127 @@
-/**
- * Portfolio JavaScript - Modular & Performant
- * Handles scroll animations, navigation, and interactions
- */
+/** Shared interactions for the homepage and project archive. */
+(() => {
+  const nav = document.querySelector('.nav');
+  const progressBar = document.querySelector('.progress span');
+  const sections = [...document.querySelectorAll('.observe-section')];
+  const trackingLinks = document.querySelectorAll('.nav-links a, .section-rail a, .mobile-nav-panel nav a');
+  const toggle = document.querySelector('.mobile-nav-toggle');
+  const menuButton = document.querySelector('.mobile-menu-button');
+  const panel = document.querySelector('.mobile-nav-panel');
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const mobile = window.matchMedia('(max-width: 1180px)');
 
-// ========== DOM CACHING ==========
-const nav = document.querySelector('.nav');
-const revealItems = document.querySelectorAll('.reveal');
-const sections = document.querySelectorAll('.observe-section');
-const navLinks = document.querySelectorAll('.nav-links a');
-const railLinks = document.querySelectorAll('.section-rail a');
-const progressBar = document.querySelector('.progress span');
-const mouseGlow = document.querySelector('.mouse-glow');
-const bgPhoto = document.querySelector('.bg-photo');
-const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-const mobileMenuButton = document.querySelector('.mobile-menu-button');
+  // Visible by default; opt into reveal animations only when supported.
+  if ('IntersectionObserver' in window && !motion.matches) {
+    document.documentElement.classList.add('reveal-enabled');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.06 });
+    document.querySelectorAll('.reveal').forEach(item => observer.observe(item));
+    motion.addEventListener('change', () => {
+      if (motion.matches) {
+        document.documentElement.classList.remove('reveal-enabled');
+        observer.disconnect();
+      }
+    });
+  }
 
-// Cache DOM elements for better performance
-const domCache = { nav, progressBar, mouseGlow, bgPhoto };
-
-// ========== UTILITIES ==========
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const prefersFinePointer = window.matchMedia('(pointer:fine)').matches;
-
-// Throttle function for scroll events
-function throttle(fn, limit = 16) {
-  let inThrottle = false;
-  return function(...args) {
-    if (!inThrottle) {
-      fn.apply(this, args);
-      inThrottle = true;
-      setTimeout(() => inThrottle = false, limit);
-    }
-  };
-}
-
-// Debounce function for resize events
-function debounce(fn, delay = 150) {
-  let timeoutId;
-  return function(...args) {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => fn.apply(this, args), delay);
-  };
-}
-
-// ========== REVEAL ANIMATIONS ==========
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: prefersReducedMotion ? 0 : 0.12,
-  rootMargin: '0px 0px -50px 0px'
-});
-
-revealItems.forEach((item) => {
-  if (!item.classList.contains('visible')) revealObserver.observe(item);
-});
-
-// ========== SECTION TRACKING ==========
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    const id = entry.target.id;
-    navLinks.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
-    railLinks.forEach((link) => link.classList.toggle('active', link.dataset.section === id));
-  });
-}, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
-
-sections.forEach((section) => sectionObserver.observe(section));
-
-// ========== SCROLL HANDLING ==========
-function updateScrollUI() {
-  const scrollTop = window.scrollY;
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = scrollable > 0 ? (scrollTop / scrollable) * 100 : 0;
-
-  nav.classList.toggle('scrolled', scrollTop > 30);
-  progressBar.style.width = `${Math.min(progress, 100)}%`;
-}
-
-// Throttled scroll handler for performance
-const throttledScrollHandler = throttle(updateScrollUI, 16);
-window.addEventListener('scroll', throttledScrollHandler, { passive: true });
-updateScrollUI();
-
-// ========== MOUSE PARALLAX ==========
-if (prefersFinePointer && !prefersReducedMotion) {
-  window.addEventListener('pointermove', (event) => {
-    mouseGlow.style.left = `${event.clientX}px`;
-    mouseGlow.style.top = `${event.clientY}px`;
-
-    const x = (event.clientX / window.innerWidth - 0.5) * -8;
-    const y = (event.clientY / window.innerHeight - 0.5) * -5;
-    bgPhoto.style.setProperty('--bg-x', `${x}px`);
-    bgPhoto.style.setProperty('--bg-y', `${y}px`);
-  }, { passive: true });
-}
-
-// ========== MOBILE NAV ==========
-if (mobileNavToggle && mobileMenuButton) {
-  mobileNavToggle.addEventListener('change', () => {
-    document.body.classList.toggle('mobile-nav-open', mobileNavToggle.checked);
-  });
-
-  // Close mobile nav on link click
+  function setMenu(open, restoreFocus = false) {
+    if (!toggle || !menuButton || !panel) return;
+    toggle.checked = open;
+    document.body.classList.toggle('mobile-nav-open', open);
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    panel.inert = !open;
+    panel.setAttribute('aria-hidden', String(!open));
+    if (open) requestAnimationFrame(() => {
+      if (toggle.checked) panel.querySelector('a')?.focus();
+    });
+    else if (restoreFocus) menuButton.focus();
+  }
+  setMenu(false);
+  menuButton?.addEventListener('click', () => setMenu(!toggle.checked));
   document.querySelectorAll('.mobile-nav-panel a').forEach(link => {
     link.addEventListener('click', () => {
-      mobileNavToggle.checked = false;
-      document.body.classList.remove('mobile-nav-open');
-    });
-  });
-}
-
-// ========== KEYBOARD NAVIGATION ==========
-document.addEventListener('keydown', (e) => {
-  // Escape closes mobile nav
-  if (e.key === 'Escape' && mobileNavToggle?.checked) {
-    mobileNavToggle.checked = false;
-    document.body.classList.remove('mobile-nav-open');
-  }
-});
-
-// ========== SMOOTH SCROLL FALLBACK ==========
-if (!('scrollBehavior' in document.documentElement.style)) {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      const target = document.querySelector(targetId);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+      setMenu(false);
+      const url = new URL(link.href);
+      if (url.pathname === location.pathname && url.hash) {
+        const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+        if (target) {
+          target.setAttribute('tabindex', '-1');
+          target.focus({ preventScroll: true });
+        }
       }
     });
   });
-}
+  document.addEventListener('keydown', event => {
+    if (!toggle?.checked) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      setMenu(false, true);
+    } else if (event.key === 'Tab') {
+      const focusable = [menuButton, ...panel.querySelectorAll('a[href]')];
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+  mobile.addEventListener('change', () => setMenu(false));
+  window.addEventListener('pageshow', () => setMenu(false));
 
-// ========== CLEANUP ON UNLOAD ==========
-window.addEventListener('beforeunload', () => {
-  revealObserver.disconnect();
-  sectionObserver.disconnect();
-  window.removeEventListener('scroll', throttledScrollHandler);
-});
+  function updateScrollUI() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    nav?.classList.toggle('scrolled', window.scrollY > 30);
+    if (progressBar) progressBar.style.width = `${scrollable > 0 ? Math.min(100, window.scrollY / scrollable * 100) : 0}%`;
+    // Track the last section above the reading line, including long cards.
+    const readingLine = Math.min(180, window.innerHeight * 0.25);
+    let current = sections[0];
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= readingLine) current = section;
+    }
+    if (!current) return;
+    trackingLinks.forEach(link => {
+      const url = new URL(link.href);
+      const active = url.pathname === location.pathname && url.hash === `#${current.id}`;
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  }
+  let scrollPending = false;
+  window.addEventListener('scroll', () => {
+    if (scrollPending) return;
+    scrollPending = true;
+    requestAnimationFrame(() => {
+      updateScrollUI();
+      scrollPending = false;
+    });
+  }, { passive: true });
+  window.addEventListener('resize', updateScrollUI, { passive: true });
+  updateScrollUI();
+
+  const glow = document.querySelector('.mouse-glow');
+  const photo = document.querySelector('.bg-photo');
+  if (window.matchMedia('(pointer: fine)').matches) {
+    window.addEventListener('pointermove', event => {
+      if (motion.matches) return;
+      requestAnimationFrame(() => {
+        if (glow) {
+          glow.style.left = `${event.clientX}px`;
+          glow.style.top = `${event.clientY}px`;
+        }
+        photo?.style.setProperty('--bg-x', `${(event.clientX / window.innerWidth - 0.5) * -8}px`);
+        photo?.style.setProperty('--bg-y', `${(event.clientY / window.innerHeight - 0.5) * -5}px`);
+      });
+    }, { passive: true });
+  }
+})();
